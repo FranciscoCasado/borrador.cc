@@ -2,7 +2,6 @@ baseURL = "https://franciscocasado.github.io/borrador.cc/"
 languageCode = "es-cl"
 title = "Borrador Constitucional"
 
-theme = "hugo-book"
 
 [params]
     BookSection = 'comisiones'
