@@ -1,41 +1,30 @@
 ---
-title: Introduction
+title: "La hoja ya no está en blanco :book:"
 type: docs
 ---
 
-# Acerbo datus maxime
-
-{{< columns >}}
-## Astris ipse furtiva
-
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
-
-<--->
-
-## Suis quot vota
-
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
-{{< /columns >}}
+# Así quedaría la nueva constitución
+> Revisa todas las normas aprobadas en particular, organizadas según el trabajo de cada comisión 
+> - Puedes visitar el capítulo de cada comisión en el menú lateral (esquina superior-izquierda en móviles)
+> - Puedes buscar por *palabras* o *frases* en **todos** los artículos usano la barra de búsqueda.
 
 
-## Tempora nisi nunc
+## Comisiones
+{{< hint warning >}} 
+Aún no han sesionado todas las comisiones!
+{{< /hint >}}
 
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
+- [ ] Comisión 1: Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral
 
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
+- [ ] Comisión 2: Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía
 
-## Locis suis novi cum suoque decidit eadem
+- [x] [**Comisión 3**]({{< relref "comisiones/3/" >}}): Forma de Estado, Ordenamiento, Autonomía, Descentralización, Equidad, Justicia Territorial, Gobiernos Locales y Organización Fiscal
 
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
+- [ ] Comisión 4: Derechos Fundamentales
+
+- [ ] Comisión 5: Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico
+
+- [ ] Comisión 6: Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional
+
+- [ ] Comisión 7: Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios
+
