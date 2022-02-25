@@ -1,14 +1,14 @@
 {
   "name": "Nueva Constitución",
   "short_name": "Nueva Constitución",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/borrador.cc/",
+  "scope": "/borrador.cc/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/borrador.cc/favicon.svg",
       "sizes": "512x512"
     }
   ]
