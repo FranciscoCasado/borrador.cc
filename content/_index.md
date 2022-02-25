@@ -3,10 +3,12 @@ title: "La hoja ya no está en blanco :book:"
 type: docs
 ---
 
-# Así quedaría la nueva constitución
-> Revisa todas las normas aprobadas en particular, organizadas según el trabajo de cada comisión 
-> - Puedes visitar el capítulo de cada comisión en el menú lateral (esquina superior-izquierda en móviles)
-> - Puedes buscar por *palabras* o *frases* en **todos** los artículos usano la barra de búsqueda.
+# La hoja ya no está en blanco &#128214;
+
+## Así quedaría la nueva constitución
+Revisa todas las normas aprobadas en particular, organizadas según el trabajo de cada comisión 
+- Puedes visitar el capítulo de cada comisión en el menú lateral (esquina superior-izquierda en móviles)
+- Puedes buscar por *palabras* o *frases* en **todos** los artículos usano la barra de búsqueda.
 
 
 ## Comisiones
