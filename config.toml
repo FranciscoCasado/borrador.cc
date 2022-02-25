@@ -1,0 +1,9 @@
+baseURL = "https://borrador.cc/"
+languageCode = "es-cl"
+title = "Nueva Constitución"
+
+theme = "hugo-book"
+
+[params]
+    BookSection = 'comisiones'
+    BookSearch = true
