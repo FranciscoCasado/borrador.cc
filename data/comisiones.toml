@@ -1,0 +1,34 @@
+[[comision]]
+    number = 1 
+    title = "Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
+    ready = false
+
+[[comision]]
+    number = 2 
+    title = "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía"
+    ready = false
+
+[[comision]]
+    number = 3 
+    title = "Forma de Estado, Ordenamiento, Autonomía, Descentralización, Equidad, Justicia Territorial, Gobiernos Locales y Organización Fiscal"
+    ready = true
+
+[[comision]]
+    number = 4 
+    title = "Derechos Fundamentales"
+    ready = false
+
+[[comision]]
+    number = 5 
+    title = "Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico"
+    ready = false
+
+[[comision]]
+    number = 6 
+    title = "Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional"
+    ready = true
+
+[[comision]]
+    number = 7 
+    title = "Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios"
+    ready = false
