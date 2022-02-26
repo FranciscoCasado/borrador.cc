@@ -1,6 +1,6 @@
 {
-  "name": "Borrador Constitucional",
-  "short_name": "Borrador Constitucional",
+  "name": "Lee la futura constitución",
+  "short_name": "Lee la futura constitución",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
