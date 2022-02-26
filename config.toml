@@ -1,6 +1,6 @@
 baseURL = "https://www.leelanuevaconstitucion.cl"
 languageCode = "es-cl"
-title = "Borrador Constitucional"
+title = "Lee la futura constitución"
 paginate = 50
 
 [params]

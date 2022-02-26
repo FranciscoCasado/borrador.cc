@@ -4,4 +4,4 @@ long-title: "Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y 
 weight: 7
 ---
 
-# Comisión 7: Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios
+# Comisión 7
