@@ -1,6 +1,5 @@
 ---
 title: "La hoja ya no está en blanco &#128214"
-type: docs
 ---
 
 ## Revisa todas las normas aprobadas en la convención

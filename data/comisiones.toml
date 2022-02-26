@@ -31,4 +31,4 @@
 [[comision]]
     number = 7 
     title = "Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios"
-    ready = false
+    ready = true

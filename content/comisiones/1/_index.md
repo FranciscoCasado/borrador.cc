@@ -1,8 +1,6 @@
 ---
-weight: 1
-bookFlatSection: true
 title: "1. Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
-bookHidden: true
+number: 1
 ---
 
 # Comisión 1: Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral
