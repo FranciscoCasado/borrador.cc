@@ -8,3 +8,4 @@ paginate = 50
     BookSearch = true
     enableEmoji = true
     BookToc = false
+    BookTheme = 'auto'
