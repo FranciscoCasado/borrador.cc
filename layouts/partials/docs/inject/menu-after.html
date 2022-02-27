@@ -1,0 +1,3 @@
+<hr>
+{{ $about := relref . "about" }}
+<a {{with $about}}href="{{.}}" {{end}}>Sobre este sitio</a>
