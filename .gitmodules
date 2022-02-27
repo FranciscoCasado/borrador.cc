@@ -1,4 +1,4 @@
 [submodule "themes/hugo-book"]
 	path = themes/hugo-book
-	url = https://github.com/FranciscoCasado/hugo-book
+	url = https://github.com/alex-shpak/hugo-book
 	branch = master
