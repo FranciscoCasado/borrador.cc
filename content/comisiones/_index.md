@@ -1,6 +1,5 @@
 ---
 title: "Comisiones"
-layout: 
 ---
 
 {{< comisiones >}}

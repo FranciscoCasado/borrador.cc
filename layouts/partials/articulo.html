@@ -10,9 +10,7 @@
   {{ $title = print "Art. " (.File.BaseFileName | title )}} 
 {{ end }}
       
-    <h3>
-      {{ $title }}
-    </h3>
+    {{ .RenderString (print "### " $title)}}
     {{ partial "docs/post-meta" . }}
     <p>
       {{- .Content -}}

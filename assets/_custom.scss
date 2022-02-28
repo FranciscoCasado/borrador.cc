@@ -71,7 +71,7 @@
     background-color: var(--gray-100);
     color: var(--gray-700);
     border: 1px solid var(--gray-100) ;
-    a {
+    a.comision-content {
         color: var(--gray-700);
         pointer-events: none;
     }    
@@ -100,10 +100,29 @@
     }
 }
 
+
+
 .menu-sitio-oficial-convencion {
     color: var(--gray-700);
     a {
         color: var(--body-font-color);
         text-decoration: underline;
     }
+}
+
+.menu-item, .menu-item-link {
+    font-size: large;
+    border: black;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+
+.menu-item-link:hover {
+        opacity: 0.5;
+}
+
+a.anchor img{
+    opacity: 0.7;
+    height: 15px;
+    width: 15px;
 }

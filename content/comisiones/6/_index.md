@@ -1,6 +1,8 @@
 ---
 title: "Comisión 6"
 long-title: "Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional"
+ready: true
+status: "1ª votación realizada el jueves 17 de febrero"
 weight: 6
 ---
 
