@@ -1,15 +1,21 @@
 <div class="comisiones flex flex-wrap">
   {{ $file :=.Site.Data.comisiones }}
-  <ol>
     {{ range $file}}
       {{ range $comision := $file}}
         {{ range $data := $comision }}
-        {{ $ref := (print "comisiones/" $data.number) | relURL }}
-        <li {{if not $data.ready }} class="disabled" {{ end }}>
-          <a {{with $ref }} href="{{.}}" {{ end }} > {{$data.title}}</a>
-        </li>
-        {{ end }}
+          {{ $ref := (print "comisiones/" $data.number) | relURL }}
+          {{ $disabled := cond ( $data.ready ) " " "disabled"}}
+            <div {{ with $disabled }} class="comision {{.}}" {{ end }}>
+              <a {{ with $ref }} href="{{.}}" {{ end }} class="comision-content">
+                <div class="comision-title">
+                  {{ $data.title }}
+                </div>
+                <div class="comision-status flex"> 
+                  <span class="comision-status-icon"></span> {{ $data.status }}
+                </div>
+              </a>
+            </div>
+          {{ end }}
       {{ end }}
     {{ end }}
-  </ol>
 </div>
