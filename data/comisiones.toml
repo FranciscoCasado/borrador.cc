@@ -1,41 +1,41 @@
-[[comision]]
-    number = 1 
-    title = "Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
-    ready = false
-    status = "Aún no se agenda la votación"
+[comision.1]
+number = 1 
+title = "Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
+ready = false
+status = "Aún no se agenda la votación"
 
-[[comision]]
-    number = 2 
-    title = "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía"
-    ready = false
-    status = "Aún no se agenda la votación"
+[comision.2]
+number = 2 
+title = "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía"
+ready = false
+status = "Aún no se agenda la votación"
 
-[[comision]]
-    number = 3 
-    title = "Forma de Estado, Ordenamiento, Autonomía, Descentralización, Equidad, Justicia Territorial, Gobiernos Locales y Organización Fiscal"
-    ready = true
-    status = "1ª votación realizada el viernes 18 de febrero"
+[comision.3]
+number = 3 
+title = "Forma de Estado, Ordenamiento, Autonomía, Descentralización, Equidad, Justicia Territorial, Gobiernos Locales y Organización Fiscal"
+ready = true
+status = "1ª votación realizada el viernes 18 de febrero"
 
-[[comision]]
-    number = 4 
-    title = "Derechos Fundamentales"
-    ready = false
-    status = "Aún no se agenda la votación"
+[comision.4]
+number = 4 
+title = "Derechos Fundamentales"
+ready = false
+status = "Aún no se agenda la votación"
 
-[[comision]]
-    number = 5 
-    title = "Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico"
-    ready = false
-    status = "Aún no se agenda la votación"
+[comision.5]
+number = 5 
+title = "Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico"
+ready = false
+status = "Aún no se agenda la votación"
 
-[[comision]]
-    number = 6 
-    title = "Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional"
-    ready = true
-    status = "1ª votación realizada el jueves 17 de febrero"
+[comision.6]
+number = 6 
+title = "Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional"
+ready = true
+status = "1ª votación realizada el jueves 17 de febrero"
 
-[[comision]]
-    number = 7 
-    title = "Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios"
-    ready = true
-    status = "1ª votación realizada el viernes 25 de febrero"
+[comision.7]
+number = 7 
+title = "Sistemas de Conocimientos, Culturas, Ciencia, Tecnología, Artes y Patrimonios"
+ready = true
+status = "1ª votación realizada el viernes 25 de febrero"
