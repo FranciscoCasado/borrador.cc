@@ -4,7 +4,7 @@ weight: 99
 bookFlatSection: true
 ---
 ## ¿Por qué existe este sitio?
-*Para tener la futura convención a **1** solo click*
+*Para tener la futura constitución a **1** solo click*
 
 
 ## Comparte y discute &#128172

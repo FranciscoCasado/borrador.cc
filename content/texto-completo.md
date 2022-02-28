@@ -2,7 +2,7 @@
 title: "Texto Completo"
 weight: 0
 bookToc: true
-bookHidden: true
+bookHidden: false
 ---
 ## Comisión 1
 **Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral**

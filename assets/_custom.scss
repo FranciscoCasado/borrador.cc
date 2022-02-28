@@ -100,12 +100,25 @@
     }
 }
 
+
+
 .menu-sitio-oficial-convencion {
     color: var(--gray-700);
     a {
         color: var(--body-font-color);
         text-decoration: underline;
     }
+}
+
+.menu-item, .menu-item-link {
+    font-size: large;
+    border: black;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+
+.menu-item-link:hover {
+        opacity: 0.5;
 }
 
 a.anchor img{
