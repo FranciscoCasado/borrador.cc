@@ -7,5 +7,3 @@ status: "Aún no se agenda la votación"
 bookHidden: true
 ---
 
-# Comisión 1: Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral
-

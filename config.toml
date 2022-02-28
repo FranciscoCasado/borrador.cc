@@ -14,5 +14,5 @@ paginate = 50
     BookSection = 'comisiones'
     BookSearch = true
     enableEmoji = true
-    BookToc = true
+    BookToc = false
     BookTheme = 'auto'
