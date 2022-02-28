@@ -1,5 +1,5 @@
 ---
-title: "Comisión 2."
+title: "Comisión 2"
 long-title: "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía"
 ready: false
 status: "Aún no se agenda la votación"

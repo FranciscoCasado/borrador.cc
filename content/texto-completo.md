@@ -1,6 +1,7 @@
 ---
 title: "Texto Completo"
 weight: 0
+bookToc: true
 bookHidden: true
 ---
 ## Comisión 1
@@ -265,7 +266,7 @@ alternativos de resolución de conflictos.
 
 *1ª votación realizada el viernes 25 de febrero*
 
-### 
+### Art. 8
 Toda persona ofendida o injustamente aludida 
 por un medio de 
 comunicación e información tiene derecho a que su aclaración o rectificación sea difundida 
@@ -274,7 +275,7 @@ gratuitamente por el mismo medio en que hubiese sido emitida.
 La ley regulará el ejercicio de este derecho, con pleno respeto a la libertad de 
 expresión
 
-### 
+### Art. 12
 El Estado promueve, fomenta y garantiza el acceso, desarrollo y 
 difusión de las culturas, las artes y los conocimientos, atendiendo a la diversidad cultural 
 en todas sus manifestaciones y contribuciones, bajo los principios de cola
@@ -291,7 +292,7 @@ cultural de las comunidades y personas, así como de sus procesos culturales.
 Esto se realizará con pleno respeto a los derechos, libertades y las autonomías 
 que consagra esta Constitución
 
-### 
+### Art. 13
 Los pueblos y naciones preexistentes tienen de
 recho a obtener la 
 repatriación de objetos de cultura y de restos humanos pertenecientes a los pueblos. El 
@@ -301,31 +302,30 @@ miento de los pueblos y
 garantizará el acceso de los pueblos a su propio patrimonio, incluyendo objetos, restos 
 humanos y sitios culturalmente significativos para su desarrollo
 
-### 
+### Art. 18
 Todas las personas, individual y colectivamente, tienen derecho 
 al acceso universal, a la conectividad digital y a las tecnologías de la información y 
 comunicación, con pleno respeto de los derechos y garantías que establecen esta 
 Constitución y las leyes
 
-### 
+### Art. 19
 El Estado tiene la obligación de superar las brec
 has de acceso, 
 uso y participación en el espacio digital, sus dispositivos e infraestructuras
 
-### 
+### Art. 20
 El Estado garantiza el cumplimiento del principio de neutralidad 
 en la red. Las obligaciones, condiciones y límites en esta materia serán 
 determinados por 
 la ley
 
-### 
+### Art. 21
 El Estado garantiza el acceso libre, equitativo y descentralizado, 
 con condiciones de calidad y velocidad adecuadas y efectivas a los servicios básicos de 
 comunicación.
 
-### 
+### Art. 22
 Toda persona tiene el derecho a la
- 
 educación digital, al desarrollo 
 del conocimiento, pensamiento y lenguaje tecnológico, así como a gozar de sus beneficios. 
 El Estado asegurará que todas las personas tengan la posibilidad de ejercer sus derechos 
@@ -333,7 +333,7 @@ en los espacios digitales, para lo cual cre
 ará políticas públicas y financiará planes y 
 programas gratuitos con tal objeto
 
-### 
+### Art. 23
 Las obligaciones, condiciones y límites en esta materia serán 
 determinados por la ley
 

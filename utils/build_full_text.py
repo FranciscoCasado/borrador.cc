@@ -6,6 +6,7 @@ with open ("../content/texto-completo.md","w") as full_text:
     full_text.write("---\n")
     full_text.write(f"title: \"Texto Completo\"\n")
     full_text.write(f"weight: 0\n")
+    full_text.write("bookToc: true\n")
     full_text.write("bookHidden: true\n")
     full_text.write("---\n")
     
@@ -27,7 +28,11 @@ with open ("../content/texto-completo.md","w") as full_text:
                     article_path = os.path.join(comision_path + "/articulos", file)
                     article = frontmatter.load(article_path)
                     
-                    full_text.write("### " + article["title"] + "\n")
+                    title = article["title"]
+                    if title == "":
+                        title = f"Art. {article['weight']}"
+                    
+                    full_text.write("### " + title+ "\n")
                     full_text.write(article.content)
                     full_text.write("\n\n")
                     
