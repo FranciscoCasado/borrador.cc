@@ -4,12 +4,6 @@ languageCode = "es-cl"
 title = "Lee la futura constitución"
 paginate = 50
 
-
-[markup]
-[markup.goldmark.renderer]
-  unsafe = true
-
-
 [params]
     BookSection = 'comisiones'
     BookSearch = true
