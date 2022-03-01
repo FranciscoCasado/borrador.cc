@@ -4,7 +4,5 @@
   {{ $dash := cond (eq $long_title "") "" " - " }}
   {{ .RenderString (print $title $dash $long_title) }}
   {{ partial "docs/post-meta" . }}
-  <p>
-    {{- .Content -}}
-  </p>
+  {{- .Content -}}
 </article>
