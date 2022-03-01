@@ -6,4 +6,4 @@ ready: false
 status: "Aún no se agenda la votación"
 bookHidden: true
 ---
-
+{{< status >}}
