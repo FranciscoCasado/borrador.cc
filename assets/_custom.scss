@@ -1,9 +1,12 @@
-
 .comisiones {
     counter-reset: coms;
     list-style: none;
     padding: 0;
     margin: 0;
+    
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .comision {
@@ -14,20 +17,13 @@
     min-height: 3em;
     margin-bottom: 0.5em;
     border: 1px solid var(--gray-200);
-
 }
 
 .comision:hover {
     border: 1px solid var(--gray-500);
-    pointer-events: all;
-}
-    
-
-.comision .comision-content:hover {
-    text-decoration: none;
 }
 
-.comision-title{
+.comision-title {
     display: block;
     padding-left: 2em;
     margin-bottom: 10px;
@@ -43,7 +39,6 @@
     height: 100%;
     text-align: center;
 }
-
 
 .comision-status {
     display: flex;
@@ -64,17 +59,14 @@
     background-size: 50%;
 }
 
-
-
-
 .disabled {
     background-color: var(--gray-100);
-    color: var(--gray-700);
     border: 1px solid var(--gray-100) ;
-    a.comision-content {
+    pointer-events: none;
+    
+    .comision-title, .comision-status {
         color: var(--gray-700);
-        pointer-events: none;
-    }    
+    }
 }
 
 .disabled:hover {
@@ -85,12 +77,6 @@
     background-image: url("icons/pending.svg");
 }
 
-.disabled .comision-status{
-    color: var(--gray-700)
-}
-
-
-
 .articulo {
     margin-bottom: $padding-16 * 1.5;
     
@@ -99,8 +85,6 @@
         margin-bottom: 0.8em;
     }
 }
-
-
 
 .menu-sitio-oficial-convencion {
     color: var(--gray-700);
@@ -125,4 +109,8 @@ a.anchor img{
     opacity: 0.7;
     height: 15px;
     width: 15px;
+}
+
+.book-footer {
+    color: var(--gray-700)
 }

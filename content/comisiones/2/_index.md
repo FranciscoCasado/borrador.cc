@@ -6,3 +6,4 @@ status: "Aún no se agenda la votación"
 weight: 2
 bookHidden: true
 ---
+{{< status >}}
