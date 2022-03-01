@@ -1,0 +1,11 @@
+{{ if (index .Page.Params "ready")}}
+    <blockquote class="book-hint">
+        <img src="/icons/check.svg" width="15" height="15" alt="">
+        {{index .Page.Params "status"}}
+    </blockquote>
+{{ else }}
+    <blockquote class="book-hint warning">
+        <img src="/icons/pending.svg" width="15" height="15" alt="">
+        {{ index .Page.Params "status"}}
+    </blockquote>
+{{ end }}
