@@ -1,0 +1,21 @@
+[
+{{- $pages := where .Site.Pages "Kind" "in" (slice "page" "section") -}}
+{{- $pages = where $pages "Params.booksearchexclude" "!=" true -}}
+{{- $pages = where $pages "Content" "not in" (slice nil "") -}}
+{{- $pages = where $pages "Type" "eq" "articulo" -}}
+
+{{ range $index, $page := $pages }}
+{{ $parent_ref := $page.Parent.RelPermalink}}
+{{ $title := print $page.Title " - " (index $page.Params "long-title") }}
+{{ $heading_ref := print (urlize $page.Title) "---" (urlize (index $page.Params "long-title")) }}
+{{ $heading_ref := print "#" (replace $heading_ref "." "") }}
+{{ if gt $index 0}},{{end}} {
+    "id": {{ $index }},
+    "href": "{{ print $parent_ref $heading_ref}}",
+    "title": "{{ print $title }}",
+    "section": {{ (partial "docs/title" $page.Parent) | jsonify }},
+    "content": {{ $page.Plain | jsonify }}
+}
+{{- end -}}
+]
+
