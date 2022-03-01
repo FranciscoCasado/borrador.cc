@@ -61,7 +61,7 @@
 
 .disabled {
     background-color: var(--gray-100);
-    border: 1px solid var(--gray-100) ;
+    border: 1px solid var(--gray-100);
     pointer-events: none;
     
     .comision-title, .comision-status {
@@ -113,4 +113,12 @@ a.anchor img{
 
 .book-footer {
     color: var(--gray-700)
+}
+
+.search-result {
+    display: block;
+    padding: 0.2em;
+    margin: 0.5em 0;
+    border-left: solid 3px var(--gray-500);
+    border-radius: 3px;
 }

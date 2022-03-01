@@ -87,6 +87,7 @@
       a.href = page.href;
       a.textContent = page.title;
       small.textContent = page.section;
+      li.classList.add("search-result");
 
       results.appendChild(li);
     });
