@@ -1,18 +1,19 @@
 
 <article class="markdown articulo">
-      {{ $title := "" }}
+  {{ $title := "" }}
+  {{ $long_title := (index .Params "long-title") }}
 
-{{ if .Title }}
-  {{ $title = .Title }}
-{{ else if and .IsSection .File }}
-  {{ $title = path.Base .File.Dir | humanize | title }}
-{{ else if and .IsPage .File }}
-  {{ $title = print "Art. " (.File.BaseFileName | title )}} 
-{{ end }}
-      
-    {{ .RenderString (print "### " $title)}}
-    {{ partial "docs/post-meta" . }}
-    <p>
-      {{- .Content -}}
-    </p>
+  {{ if .Title }}
+    {{ $title = .Title }}
+  {{ else if and .IsSection .File }}
+    {{ $title = path.Base .File.Dir | humanize | title }}
+  {{ else if and .IsPage .File }}
+    {{ $title = print "Art. " (.File.BaseFileName | title )}} 
+  {{ end }}
+    
+  {{ .RenderString (print "### " $title " - " $long_title ) }}
+  {{ partial "docs/post-meta" . }}
+  <p>
+    {{- .Content -}}
+  </p>
 </article>
