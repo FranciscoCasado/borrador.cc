@@ -6,7 +6,6 @@
   }
   
   .book-toc-content {
-    break-inside: avoid-page;
      ul {
       li {
           margin: 0;
@@ -15,17 +14,20 @@
   }
 
   .book-content {
-    break-inside: avoid-page;
     overflow-y: unset;
-    
-    article {
-      break-inside: page;
-    }
   }
   
   .book-header,
   .book-header aside {
     display: block;
+    
+    article{
+      break-inside: avoid;
+    }
+  }
+  
+  p, h2, h3 {
+    break-inside: always;
   }
 
   main {
