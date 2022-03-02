@@ -128,10 +128,80 @@ article h3 {
     font-size: 1.3em;
 }
 
+
+.book-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 0;
+}
+
+.book-header {
+    display: block;
+    width: 100%;
+    top: 0;
+    background-color: var(--body-background);
+    border-bottom: solid 1px var(--gray-200);
+    margin-bottom: 0;
+    z-index: 10;
+    box-shadow: 0 4px 5px -2px var(--gray-100);
+    
+    .page-title {
+        padding: 0.5em 0;
+    }
+    
+    .page-title p {
+        margin: 0;
+        font-size: small;
+    }
+    
+    label {
+        display: none;
+        margin: 0.5em;
+    }
+}
+
+.book-content {
+    flex-grow: 1;
+    position: block;
+    padding: 1em;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.book-footer {
+    margin-bottom: 1em;
+}
+
+
 @media screen and (max-width: $mobile-breakpoint) {
     a.anchor {
         opacity: 0.6 !important;
         height: 15px;
         width: 15px;
+    }
+    
+    .book-header {
+        
+        .page-title strong, p{
+            margin: 0;
+        }
+        
+        label {
+            display: block;
+        }
+    }
+    
+    #TableOfContents {
+        max-height: 35vh;
+        overflow-y: scroll !important;
+        > ul {
+            padding: 0 0 1em 1em;
+            li {
+                margin: 0.3em;
+            }
+        }
+        
+        transition: height ease-in;
     }
 };

@@ -2,21 +2,20 @@
     <label for="menu-control">
       <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
     </label>
-  
-    {{ if isset .Params "number" }}
-      Comisión {{index .Params "number"}}
-    {{ end }}
-    <strong>
-      {{ partial "docs/title" . | emojify}}
-    </strong>
-  
-  
-  <hr>
-  
+    
+    <div class="page-title">
+      <strong>
+        {{ partial "docs/title" . | emojify}}
+      </strong>
+      {{ if (isset .Params "long-title") }}
+        <p>{{ index .Params "long-title" }}</p>
+      {{ end }} 
+    </div>
+    
     <label for="toc-control">
       {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
       <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
       {{ end }}
     </label>
-  </div>
+</div>
   

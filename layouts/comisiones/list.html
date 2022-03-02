@@ -1,6 +1,5 @@
 {{ define "main" }}
   <article class="markdown">
-  <strong>{{ index .Page.Params "long-title" }}</strong>
   {{ .Page.Content }}
   {{ range sort .Paginator.Pages }}
     {{ partial "articulo" . }}

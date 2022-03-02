@@ -306,10 +306,6 @@ html {
     .book-header {
       display: block;
     }
-  
-    .book-header strong{
-      padding-left: 1em;
-    }
     
     #menu-control:focus ~ main label[for="menu-control"] {
       @include outline;
