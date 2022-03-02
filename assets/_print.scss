@@ -1,0 +1,35 @@
+@media print {
+  .book-menu,
+  .book-footer,
+  .book-toc {
+    display: none;
+  }
+  
+  .book-toc-content {
+    break-inside: avoid-page;
+     ul {
+      li {
+          margin: 0;
+      }
+    }
+  }
+
+  .book-content {
+    break-inside: avoid-page;
+    overflow-y: unset;
+    
+    article {
+      break-inside: page;
+    }
+  }
+  
+  .book-header,
+  .book-header aside {
+    display: block;
+  }
+
+  main {
+    // Fix for https://bugzilla.mozilla.org/show_bug.cgi?id=939897
+    display: block !important;
+  }
+}
