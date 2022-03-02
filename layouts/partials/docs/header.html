@@ -12,8 +12,9 @@
       {{ end }} 
     </div>
     
-    <label for="toc-control">
+    <label for="toc-control" id="toc-label">
       {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+      <span>índice</span>
       <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
       {{ end }}
     </label>
