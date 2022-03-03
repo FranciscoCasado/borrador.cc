@@ -30,7 +30,13 @@ with open ("../content/texto-completo.md","w") as full_text:
                     
                     title = article["title"]
                     if title == "":
-                        title = f"Art. {article['weight']}"
+                        full_text.write(article.content)
+                        full_text.write("\n\n")
+                        continue
+                    
+                    if article["long-title"] != "":
+                        title = f"{title} - {article['long-title']}"
+                    
                     
                     full_text.write("### " + title+ "\n")
                     full_text.write(article.content)

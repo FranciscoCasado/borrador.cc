@@ -85,12 +85,7 @@ La ley establecerá el procedimiento para resolución de las distintas contienda
 Las funciones públicas deberán radicarse priorizando la entidad local sobre la regional y ésta última sobre el Estado, sin perjuicio de aquellas competencias que la propia Constitución o las leyes reserven a cada una de estas entidades territoriales. La Región Autónoma o el Estado, cuando así lo exija el interés general, podrán subrogar de manera transitoria y supletoria las competencias que no puedan ser asumidas por la entidad local.
 
 ### Art. 17 - Diferenciación territorial
-El Estado deberá generar políticas
-públicas diferenciadas y transferir las competencias que mejor se ajusten a las necesidades
-y particularidades de los entes territoriales, con los respectivos recursos. La ley establecerá
-los criterios y requisitos para la aplicación de diferencias territoriales, así como los
-mecanismos de solidaridad y equidad que compensen las desigualdades entre los distintos
-niveles territoriales.
+El Estado deberá generar políticas públicas diferenciadas y transferir las competencias que mejor se ajusten a las necesidades y particularidades de los entes territoriales, con los respectivos recursos. La ley establecerá los criterios y requisitos para la aplicación de diferencias territoriales, así como los mecanismos de solidaridad y equidad que compensen las desigualdades entre los distintos niveles territoriales.
 
 ### Art. 18 - De las Regiones Autónomas
 Las Regiones autónomas son entidades políticas y territoriales dotadas de personalidad jurídica de derecho público y patrimonio propio que gozan de autonomía para el desarrollo de los intereses regionales, la gestión de sus recursos económicos y el ejercicio de las atribuciones legislativa, reglamentaria, ejecutiva y fiscalizadora a través de sus órganos en el ámbito de sus competencias, con arreglo a lo dispuesto en la Constitución y la ley.
@@ -201,7 +196,7 @@ Son atribuciones exclusivas de los Gobiernos Regionales las siguientes:
 
 
 ## Comisión 5
-**5. Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico**
+**Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico**
 {{< hint warning >}} 
  &#9432 Aún no se agenda la votación{{< /hint >}}
 
@@ -209,7 +204,17 @@ Son atribuciones exclusivas de los Gobiernos Regionales las siguientes:
 ## Comisión 6
 **Sistemas de Justicia, Órganos Autónomos de Control y Reforma Constitucional**
 
-*1ª votación realizada el jueves 17 de febrero*
+*1ª votación realizada el jueves 17 de febrero - 2ª votación realizada el miércoles 2 de marzo*
+
+### Art. 1 - La función jurisdiccional
+La jurisdicción es una función pública que se ejerce en nombre de los pueblos y que consiste en conocer y juzgar, por medio de un debido proceso los conflictos de relevancia jurídica y hacer ejecutar lo resuelto, de conformidad a la Constitución y las leyes, así como los tratados e instrumentos internacionales sobre derechos humanos de los que Chile es parte. 
+
+Se ejerce exclusivamente por los tribunales de justicia y las autoridades de los pueblos indígenas reconocidos por la Constitución o las leyes dictadas conforme a ella. 
+
+Al ejercer la jurisdicción se debe velar por la tutela y promoción de los derechos humanos y de la naturaleza, del sistema democrático y el principio de juridicidad.
+
+### Art. 2 - Pluralismo jurídico
+El Estado reconoce los sistemas jurídicos de los Pueblos Indígenas, los que en virtud de su derecho a la libre determinación coexisten coordinados en un plano de igualdad con el Sistema Nacional de Justicia. Estos deberán respetar los derechos fundamentales que establece esta Constitución y los tratados e instrumentos internacionales sobre derechos humanos de los que Chile es parte. La ley determinará los mecanismos de coordinación, cooperación y de resolución de conflictos de competencia entre los sistemas jurídicos indígenas y las entidades estatales.
 
 ### Art. 3 - Independencia jurisdiccional, imparcialidad y exclusividad
 Las juezas y jueces que ejercen jurisdicción son independientes entre sí y de todo otro poder o autoridad, debiendo actuar y resolver de forma imparcial. En sus providencias, sólo están sometidos al imperio de la ley.
@@ -222,11 +227,29 @@ Las juezas y jueces sólo ejercerán la función jurisdiccional, no pudiendo des
 
 Las juezas y jueces no podrán militar en partidos políticos.
 
-### Art. 5
+### Art. 4 - De la inamovilidad
+Las juezas y jueces son inamovibles. No pueden ser suspendidos, trasladados o removidos sino conforme a las causales y procedimientos establecidos por la Constitución y las leyes.
+
+### Art. 5 - Derecho de acceso a la justicia
+La Constitución garantiza el pleno acceso a la justicia a todas las personas y colectivos. Es deber del Estado remover los obstáculos sociales, culturales y económicos que impidan o limiten la posibilidad de acudir a los órganos jurisdiccionales para la tutela y el ejercicio de sus derechos. 
+
 Los tribunales deben brindar una atención adecuada a quienes presenten peticiones o consultas ante ellos, otorgando siempre un trato digno y respetuoso. Una ley establecerá sus derechos y deberes.
+
+## Principios Generales
 
 ### Art. 6 - Tutela jurisdiccional efectiva
 Todas las personas tienen derecho a requerir de los tribunales de justicia la tutela efectiva de sus derechos e intereses legítimos, de manera oportuna y eficaz conforme a los principios y estándares reconocidos en la Constitución y las leyes.
+
+### Art. 7 - Inexcusabilidad e indelegabilidad
+Reclamada su intervención en la forma legal y sobre materias de su competencia, los tribunales no podrán excusarse de ejercer su función en un tiempo razonable ni aún a falta de norma jurídica expresa que resuelva el asunto sometido a su decisión. El ejercicio de la jurisdicción es indelegable.
+
+### Art. 8 - Ejecución de las resoluciones
+Para hacer ejecutar las resoluciones y practicar o hacer practicar las actuaciones que determine la ley, los tribunales de justicia podrán impartir órdenes o instrucciones directas a la fuerza pública, debiendo cumplir lo mandatado de forma rápida y expedita, sin poder calificar su fundamento, oportunidad o legalidad. 
+
+Las sentencias dictadas contra el Estado de Chile por tribunales internacionales de derechos humanos, cuya jurisdicción ha sido reconocida por éste, serán cumplidas por los tribunales de justicia conforme al procedimiento establecido por la ley, aun si contraviniere una sentencia firme pronunciada por estos.
+
+### Art. 9 - Fundamentación y lenguaje claro
+Las sentencias deberán ser siempre fundadas y redactadas en un lenguaje claro e inclusivo. La ley podrá establecer excepciones al deber de fundamentación de las resoluciones judiciales.
 
 ### Art. 10 - Gratuidad
 El acceso a la función jurisdiccional será gratuito, sin perjuicio de las actuaciones judiciales y sanciones procesales establecidas por la ley.
@@ -234,9 +257,11 @@ El acceso a la función jurisdiccional será gratuito, sin perjuicio de las actu
 La justicia arbitral será siempre voluntaria. La ley no podrá establecer arbitrajes forzosos.
 
 ### Art. 11 - Principio de responsabilidad jurisdiccional
-Las juezas y jueces son personalmente responsables por los delitos de cohecho, falta de observancia en materia sustancial de las leyes que reglan el procedimiento, y, en general, por toda prevaricación, denegación o torcida administración de justicia. La ley determinará los casos y el modo de hacer efectiva esta responsabilidad.
+Las juezas y jueces son personalmente responsables por los delitos de cohecho, falta de observancia en materia sustancial de las leyes que regulan el procedimiento, y, en general, por toda prevaricación, denegación o torcida administración de justicia. La ley determinará los casos y el modo de hacer efectiva esta responsabilidad.
 
-### Art. 12
+Los perjuicios por error judicial otorgarán el derecho a una indemnización por el Estado, conforme al procedimiento establecido en la Constitución y las leyes.
+
+### Art. 12 - Publicidad, Probidad y Transparencia
 En los procesos en que intervengan niñas, niños y adolescentes, se deberá procurar el resguardo de su identidad.
 
 Los principios de probidad y de transparencia serán aplicables a todas las personas que ejercen jurisdicción en el país. La ley establecerá las responsabilidades correspondientes en caso de infracción a esta disposición.
@@ -253,6 +278,8 @@ Los tribunales, cualquiera sea su competencia, deben resolver con enfoque de gé
 
 ### Art. 15 - Plurinacionalidad, pluralismo jurídico e interculturalidad
 La función jurisdiccional se define en su estructura, integración y procedimientos conforme a los principios de plurinacionalidad, pluralismo jurídico e interculturalidad.
+
+Cuando se trate de personas indígenas, los tribunales y sus funcionarios deberán adoptar una perspectiva intercultural en el tratamiento y resolución de las materias de su competencia, tomando debidamente en consideración las costumbres, tradiciones, protocolos y los sistemas normativos de los pueblos indígenas, conforme a los tratados e instrumentos internacionales de derechos humanos de los que Chile es parte.
 
 ### Art. 16 - Mecanismos Colaborativos de Resolución de Conflictos
 Es deber del Estado promover e implementar mecanismos colaborativos de resolución de conflictos que garanticen la participación activa y el diálogo.
