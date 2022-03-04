@@ -1,8 +1,12 @@
 <article class="markdown articulo">
-  {{ $title := print "### " .Title }}
   {{ $long_title := index .Page.Params "long-title" }}
   {{ $dash := cond (eq $long_title "") "" " - " }}
-  {{ .RenderString (print $title $dash $long_title) }}
+  {{ $title := print .Title $dash $long_title }}
+  {{ $id := print "com" (.Parent.Param "weight") "-art" (.Param "weight")}}
+  <h3 id={{ $id }}> {{ $title }} 
+    <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
+      <img src="/icons/link.svg" alt="parmalink">
+    </a></h3>
   {{ partial "docs/post-meta" . }}
   {{- .Content -}}
 </article>
