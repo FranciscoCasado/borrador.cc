@@ -15,10 +15,10 @@
 {{ end }}
 
 {{ define "comision-heading" }}
-    <div class="full-text-comision-heading">
+    {{ $id := print "com" (.Param "weight")}}
+    <div class="full-text-comision-heading" id={{$id}}>
       {{ .Title }}
     </div>
-    
 {{ end }}
 
 {{ define "entry" }}
@@ -30,10 +30,11 @@
 {{ end }}
 
 {{ define "toc" }}
+  <section class="toc-content">
   {{ range $comision := where .Site.Pages "Type" "comision"}}
   {{ if not (isset $comision.Params "bookhidden")}}
     <section class="toc-section">
-      {{ template "comision-heading" . }}
+      {{ template "comision-link" . }}
       {{ range .Pages }}
         {{ if eq .Type "articulo" }}
           {{ template "article-link" .}}
@@ -41,9 +42,10 @@
             {{ template "heading-link" . }}
         {{ end }}
       {{ end }}
-    
+    </section>
   {{ end }}
   {{ end }}
+  </section>
 {{ end }}
 
 {{ define "article-link"}}
@@ -56,6 +58,11 @@
   {{ $title := index .Params "long-title" }}
   {{ $heading_ref := print "#com" (.Parent.Param "weight") "-" (anchorize (index .Params "long-title")) }}
   <a {{with $heading_ref}} href="{{.}}" {{end}} class="toc-l1"> {{$title}}</a>
+{{end}}
+
+{{ define "comision-link"}}
+  {{ $heading_ref := print "#com" (.Param "weight")}}
+  <a {{with $heading_ref}} href="{{.}}" {{end}} class="full-text-comision-heading"> {{.Title}}</a>
 {{end}}
 
 
