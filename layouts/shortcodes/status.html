@@ -7,7 +7,7 @@
             {{ range .Page.Param "status" }}
             <div>
             <img {{ with $icon }}src="/icons/{{.}}.svg"{{end}} width="15" height="15" alt="">
-                {{ .message }} - <a {{with .link }} href="{{.}}"{{ end }}>{{ .document }} &#128196</a>
+                {{ .message }} <a {{with .link }} href="{{.}}"{{ end }}>{{ with .document }} &#128196 {{ . }} {{end }}</a>
             </div>
             {{ end }}
         </div>
