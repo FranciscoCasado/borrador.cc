@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <section class="markdown">
+  {{ .Content }}
+    {{ range $comision := where .Site.Pages "Type" "comision"}}
+        {{ if not (isset $comision.Params "bookhidden")}}
+          {{ template "comision-heading" . }}
+          {{ range .Pages }}
+            {{ template "entry" .}}
+          {{ end }}
+        <hr>
+        {{ end }}
+    {{ end }}
+  </section>
+  
+{{ end }}
+
+{{ define "comision-heading" }}
+    <div class="full-text-comision-heading">
+      {{ .Title }}
+    </div>
+    
+{{ end }}
+
+{{ define "entry" }}
+    {{ if eq .Type "articulo"}}
+      {{ partial "articulo" . }}
+    {{ else if eq .Type "heading" }}
+      {{ partial "heading" . }}
+    {{ end }}
+{{ end }}
+
+{{ define "toc" }}
+  {{ range $comision := where .Site.Pages "Type" "comision"}}
+  {{ if not (isset $comision.Params "bookhidden")}}
+    <section class="toc-section">
+      {{ template "comision-heading" . }}
+      {{ range .Pages }}
+        {{ if eq .Type "articulo" }}
+          {{ template "article-link" .}}
+          {{ else if eq .Type "heading" }}
+            {{ template "heading-link" . }}
+        {{ end }}
+      {{ end }}
+    
+  {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "comision-link"}}
+  {{ $title := print .Title " - " (index .Params "long-title") }}
+  {{ $heading_ref := print (urlize .Title) "---" (urlize (index .Params "long-title")) }}
+  {{ $heading_ref := print "#" (replace $heading_ref "." "") }}
+  <a {{with $heading_ref}} href="{{.}}" {{end}}> {{$title}}</a>
+{{ end }}
+
+
+{{ define "article-link"}}
+  {{ $title := print .Title " - " (index .Params "long-title") }}
+  {{ $heading_ref := print (urlize .Title) "---" (urlize (index .Params "long-title")) }}
+  {{ $heading_ref := print "#" (replace $heading_ref "." "") }}
+  <a {{with $heading_ref}} href="{{.}}" {{end}}> {{$title}}</a>
+{{ end }}
+
+{{ define "heading-link"}}
+  {{ $title := index .Params "long-title" }}
+  {{ $heading_ref := print "#" (urlize (index .Params "long-title")) }}
+  <a {{with $heading_ref}} href="{{.}}" {{end}}> {{$title}}</a>
+{{end}}
+
+
+
+
