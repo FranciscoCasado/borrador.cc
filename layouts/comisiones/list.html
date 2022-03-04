@@ -1,8 +1,13 @@
 {{ define "main" }}
   <article class="markdown">
   {{ .Page.Content }}
-  {{ range sort .Paginator.Pages }}
-    {{ partial "articulo" . }}
+  <hr>
+  {{ range sort (where .Paginator.Pages "Params.aproved" true)}}
+    {{ if eq .Params.type "articulo"}}
+      {{ partial "articulo" . }}
+    {{ else if eq .Params.type "heading"}}
+      {{ partial "heading" . }}
+    {{end}}
   {{ end }}
   </article>
 {{ end }}
