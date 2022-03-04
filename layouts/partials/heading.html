@@ -1,0 +1,3 @@
+{{ $title := .Title }}
+{{ $long_title := index .Page.Params "long-title" }}
+{{ .RenderString (print $title " " $long_title) }}
