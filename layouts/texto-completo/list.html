@@ -49,13 +49,13 @@
 {{ define "article-link"}}
   {{ $title := print .Title " - " (index .Params "long-title") }}
   {{ $heading_ref := print "#com" (.Parent.Param "weight") "-art" (.Param "weight")}}
-  <a {{with $heading_ref}} href="{{.}}" {{end}}> {{$title}}</a>
+  <a {{with $heading_ref}} href="{{.}}" {{end}} class="toc-l2"> {{$title}}</a>
 {{ end }}
 
 {{ define "heading-link"}}
   {{ $title := index .Params "long-title" }}
-  {{ $heading_ref := print "#" (urlize (index .Params "long-title")) }}
-  <a {{with $heading_ref}} href="{{.}}" {{end}}> {{$title}}</a>
+  {{ $heading_ref := print "#com" (.Parent.Param "weight") "-" (anchorize (index .Params "long-title")) }}
+  <a {{with $heading_ref}} href="{{.}}" {{end}} class="toc-l1"> {{$title}}</a>
 {{end}}
 
 
