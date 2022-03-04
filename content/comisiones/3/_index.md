@@ -10,7 +10,4 @@ type: "comision"
 ---
 {{< status >}}
 
-Documento Oficial
-[&#128196 Oficio 527 - Sesión nº 58 del pleno](https://www.chileconvencion.cl/wp-content/uploads/2022/02/Oficio-527-con-normas-aprobadas-en-particular-Sesion-58-del-Pleno-primer-informe-de-la-Com.-Forma-de-Estado.pdf)
-
 ## Artículos Aprobados
