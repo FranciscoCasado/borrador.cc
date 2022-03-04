@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <section class="markdown">
+  {{ .Page.Content }}
+  <div class="comisiones flex flex-wrap">
+    {{range $comision := where .Site.Pages "Type" "comision"}}
+      {{ $disabled := cond (isset $comision.Params "bookhidden") "disabled" " "}}
+      {{ $ref := .RelPermalink}}
+      <a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
+        <div class="comision-title">
+          {{ index $comision.Params "long-title" }}
+        </div>
+        <div class="comision-status flex"> 
+          <span class="comision-status-icon"></span> 
+          <span>
+            {{ range $comision.Params.status }}
+            <div>
+              {{ .message }}
+            </div>
+            {{ end }}
+          </span>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+  
+  </section>
+{{ end }}
