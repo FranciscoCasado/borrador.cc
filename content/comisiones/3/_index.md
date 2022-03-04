@@ -4,8 +4,8 @@ long-title: "Forma de Estado, Ordenamiento, Autonomía, Descentralización, Equi
 weight: 3
 status: 
     -   message: "1ª votación realizada el viernes 18 de febrero" 
-        document: ""
-        link: ""
+        document: "Oficio 527 - Sesión nº 58 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/02/Oficio-527-con-normas-aprobadas-en-particular-Sesion-58-del-Pleno-primer-informe-de-la-Com.-Forma-de-Estado.pdf"
 type: "comision"
 ---
 {{< status >}}
