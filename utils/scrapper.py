@@ -26,20 +26,23 @@ clean_text = re.sub("Sin otro particular, .*", "", head_clean, flags=re.DOTALL)
 
 for article in clean_text.split("Artículo "):
     article = article.strip()
-    number = re.match("(\d*)", article).expand(r"\1")
+    weight = re.match("(\d*)", article).expand(r"\1")
     
     article = re.sub("^\d*", "", article).strip(".- \n")
     article = article.strip(".- \n")
     article = re.sub("\d+\Z", "", article).strip(" \n")
-    
-    title = re.match("^(.*?)", article).expand(r"\1")
-    if not number:
+    print (article)
+    title = article.split(".")[0]
+    print(title)
+    if not weight:
         continue
     
-    with open (folder+number+".md","w") as file:
+    with open (folder+weight+".md","w") as file:
         file.write("---\n")
-        file.write(f"title: \"{title}\"\n")
-        file.write(f"weight: {number}\n")
+        file.write(f"title: \"Art. {weight}\"\n")
+        file.write(f"long-title: \"{title}\"\n")
+        file.write(f"weight: {weight}\n")
+        file.write("type: \"articulo\"\n")
         file.write("bookHidden: true\n")
         file.write("---\n")
         file.write(article)

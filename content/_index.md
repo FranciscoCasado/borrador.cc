@@ -7,7 +7,7 @@ title: "La hoja ya no está en blanco &#128214"
 {{< hint warning >}} 
 &#9432 Aún no se votan los informes de todas las comisiones!
 
-*Última actualización:* miércoles 2 de marzo de 2022
+*Última actualización:* viernes 4 de marzo de 2022
 {{< /hint >}}
 
 
