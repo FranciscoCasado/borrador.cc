@@ -79,10 +79,12 @@
 
 .articulo {
     margin-bottom: $padding-16 * 1.5;
+    max-width: 72ch;
     
     p {
         margin: 0;
         margin-bottom: 0.8em;
+        text-align: justify;
     }
 }
 
