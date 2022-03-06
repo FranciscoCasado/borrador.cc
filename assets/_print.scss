@@ -26,8 +26,22 @@
     }
   }
   
-  p, h2, h3 {
-    break-inside: always;
+  p {
+    break-after: always;
+  }
+  
+  .full-text-comision-heading {
+    page-break-before: always;
+    padding-top: 0;
+  }
+  
+  p, h1, h2, h3 {
+    break-inside: avoid;
+  }
+  
+  @page {
+    margin: 0.5in;
+    padding: 0;
   }
 
   main {
