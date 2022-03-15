@@ -7,6 +7,9 @@ status:
         document: ""
         link: ""
 type: "comision"
-bookHidden: true
 ---
 {{< status >}}
+
+{{< hint danger >}}
+Votación en proceso!
+{{< /hint >}}
