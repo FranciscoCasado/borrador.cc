@@ -133,9 +133,18 @@ a.anchor img{
     border-radius: 3px;
 }
 
-article h3 {
+.articulo h3 {
+    position: relative;
     display: inline;
     font-size: 1.3em;
+    font-weight: 50;
+}
+
+.articulo h3::before{
+    content: "\00BB" ;
+    color: var(--gray-500);
+    position: absolute;
+    left: -0.8em;
 }
 
 
