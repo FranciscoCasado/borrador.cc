@@ -12,7 +12,7 @@
     "id": {{ $index }},
     "href": "{{ print $parent_ref $heading_ref}}",
     "title": "{{ print $title }}",
-    "section": {{ (partial "docs/title" $page.Parent) | jsonify }},
+    "section": {{ print $page.Parent.Title " · " ($page.Parent.Param "short-title") | jsonify }},
     "content": {{ $page.Plain | jsonify }}
 }
 {{- end -}}

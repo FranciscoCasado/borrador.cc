@@ -1,5 +1,5 @@
 ---
-title: "La hoja ya no está en blanco &#128214"
+title: "Borrador Constitucional | La hoja ya no está en blanco &#128214"
 ---
 
 ## Revisa todos los artículos *aprobados* en la convención

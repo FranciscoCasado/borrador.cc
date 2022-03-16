@@ -37,10 +37,10 @@
     </label>
   {{ else if .Page.Content }}
     <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
-      <div>{{ .Page.Title }}</div>
-      <div style="padding-left: 0.5em;">
-        {{ if isset .Page.Params "long-title" }}
-          {{index .Page.Params "long-title"}}
+      <div>
+        <span>{{ .Page.Param "weight"}}.</span>
+        {{ if isset .Page.Params "short-title" }}
+          {{index .Page.Params "short-title"}}
         {{ end }}
       </div>
     </a>

@@ -1,3 +1,5 @@
 <hr>
 {{ $about := relref . "about" }}
-<a class="menu-item-link" {{with $about}}href="{{.}}" {{end}}>Sobre este sitio</a>
+<h3><a class="menu-item-link" {{with $about}}href="{{.}}" {{end}}>Sobre este sitio</a></h3>
+{{ $faq := relref . "faq" }}
+<h3><a class="menu-item-link" {{with $faq}}href="{{.}}" {{end}}>¿Tienes dudas?</a></h3>
