@@ -4,13 +4,9 @@ long-title: "Derechos Fundamentales"
 short-title: "Derechos Fundamentales"
 weight: 4
 status: 
-    -   message: "Votación en *particular* agendada para el martes 15 de marzo." 
+    -   message: "1ª votación realizada el martes 15 de marzo" 
         document: ""
         link: ""
 type: "comision"
 ---
 {{< status >}}
-
-{{< hint danger >}}
-Votación en proceso!
-{{< /hint >}}
