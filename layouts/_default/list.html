@@ -7,7 +7,7 @@
       {{ $ref := .RelPermalink}}
       <a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
         <div class="comision-title">
-          {{ index $comision.Params "long-title" }}
+          {{ index $comision.Params "short-title" }}
         </div>
         <div class="comision-status flex"> 
           <span class="comision-status-icon"></span> 
