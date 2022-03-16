@@ -1,6 +1,7 @@
 ---
 title: "Comisión 4" 
 long-title: "Derechos Fundamentales"
+short-title: "Derechos Fundamentales"
 weight: 4
 status: 
     -   message: "Votación en *particular* agendada para el martes 15 de marzo." 

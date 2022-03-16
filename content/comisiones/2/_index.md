@@ -1,6 +1,7 @@
 ---
 title: "Comisión 2"
 long-title: "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía"
+short-title: "Principios Constitucionales"
 weight: 2
 status: 
     -   message: "Aún no se agenda la votación" 

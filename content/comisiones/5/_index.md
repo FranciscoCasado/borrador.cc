@@ -1,6 +1,7 @@
 ---
 title: "Comisión 5" 
 long-title: "Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico"
+short-title: "Medio Ambiente"
 weight: 5
 type: "comision"
 status: 
