@@ -4,10 +4,9 @@ long-title: "Principios Constitucionales, Democracia, Nacionalidad y Ciudadanía
 short-title: "Principios Constitucionales"
 weight: 2
 status: 
-    -   message: "Aún no se agenda la votación" 
+    -   message: "1ª votación realizada el miércoles 16 de marzo" 
         document: ""
         link: ""
 type: "comision"
-bookHidden: true
 ---
 {{< status >}}
