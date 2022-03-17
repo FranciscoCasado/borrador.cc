@@ -43,7 +43,10 @@ body {
     padding-top: 1rem;
     padding-left: 2rem;
     position: relative;
-    max-width: 75ch;
+    
+    article{
+        max-width: 75ch;
+    }
     
 }
 
