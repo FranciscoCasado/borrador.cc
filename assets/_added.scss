@@ -1,21 +1,24 @@
 .comisiones {
     counter-reset: coms;
     list-style: none;
-    padding: 0;
-    margin: 0;
     
-    a:visited {
-        color: inherit;
-    }
+    justify-content: center;
+    
+    a,
+    a:visited,
     a:hover {
         color: inherit;
+    }
+    
+    a:hover {
         text-decoration: none;
     }
 }
 
 .comision {
     position: relative;
-    width: 220px;
+    max-width: 220px;
+    flex-grow: 1;
     margin: 0.5em;
     margin-bottom: 0.5em;
     border: 1px solid var(--gray-200);
@@ -153,14 +156,33 @@ a.anchor img{
 .toc-section{
     display: flex;
     flex-direction: column;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        
+        li a {
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
 }
-
 
 .toc-l1 {
-    padding-left: 1em;
+    font-weight: 550;
+    margin-top: 1rem;
 }
-.toc-l2 {
-    padding-left: 2em;
+
+.toc-item  {
+    display: inline-block;
+    margin: 0;
+}
+.toc-marker {
+    min-width: 3rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    
 }
 
 
@@ -169,6 +191,28 @@ a.anchor img{
         opacity: 0.6 !important;
         height: 15px;
         width: 15px;
+    }
+    
+    .comision {
+        width: 120px;
+        height: 180px;
+    }
+    
+    .comision-img {
+        padding: 0;
+        padding-top: 0.5rem;
+        width: 100px;
+    }
+    
+    .comision-title{
+        bottom: 1rem;
+        line-height: 1em;
+        font-size: $font-size-16;
+    }
+    
+    .comision-article-count{
+        bottom: 0rem;
+        font-size: small;
     }
     
     .toc-content{

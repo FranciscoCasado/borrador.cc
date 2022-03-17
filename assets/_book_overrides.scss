@@ -1,6 +1,5 @@
 body {
     font-family: 'Source Sans Pro';
-    letter-spacing: 0.2px;
 }
 
 .book-footer {
@@ -10,7 +9,7 @@ body {
 .book-page {
     display: flex;
     flex-direction: column;
-    padding: 0 4em;
+    padding: 0;
     
 }
 
@@ -41,14 +40,29 @@ body {
 }
 
 .book-content {
-    flex-grow: 1;
-    position: block;
-    padding: 1em;
-    height: 100%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    max-width: 75ch;
+    
 }
 
 .book-footer {
     margin-bottom: 1em;
+}
+
+.book-toc{
+    
+    margin-top: 1rem;
+}
+
+.book-toc-content{
+    height: min-content;
+    max-height: 90vh;
+    margin-top: 4rem;
+    overflow-y: hidden;
+    border: solid 1px var(--gray-100);
+    border-radius: 5px;
 }
 
 

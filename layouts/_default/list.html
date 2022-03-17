@@ -5,6 +5,8 @@
     {{range $comision := where .Site.Pages "Type" "comision"}}
       {{ partial "card" . }}
     {{ end }}
+    {{ $full_text := .GetPage "texto-completo" }}
+    {{ partial "card" $full_text }}
   </div>
   
   </section>
