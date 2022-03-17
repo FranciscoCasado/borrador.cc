@@ -15,7 +15,7 @@
 
 .comision {
     position: relative;
-    width: 240px;
+    width: 220px;
     margin: 0.5em;
     margin-bottom: 0.5em;
     border: 1px solid var(--gray-200);
@@ -49,6 +49,7 @@
 .comision-article-count {
     display: block;
     font-style: italic;
+    font-size: $font-size-14;
     padding: 0 10px;
 }
 
@@ -130,6 +131,7 @@ a.anchor img{
     position: relative;
     display: inline;
     font-size: 1.3em;
+    max-width: 40ch;
 }
 
 .articulo h3::before{
