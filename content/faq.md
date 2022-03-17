@@ -6,6 +6,19 @@ bookFlatSection: true
 ## ¿Por qué existe este sitio?
 *Para tener la futura constitución a **1** solo click*
 
+## ¿Cuántos votos se necesitan para aprobar un artículo?
+**103 votos a favor** o más, que corresponden al menos a *dos tercios* del total de convencionales en ejercicio.
+
+Todos los artículos que se muestran en este sitio han superado los 103 votos a favor.
+
+Aquellos que no han sido aprobados, han sido devueltos a sus comisiones para ser re-formulados y/o quitados definitivamente del debate constitucional.
+
+## ¿Por qué la numeración de los artículos no es correlativa? 
+Cuando un artículo no alcanza 103 votos a favor, **pero tiene mayoría simple**, se devuelve a su comisión de origen para que sea reformulado. En tal caso, en este sitio se omiten aquellos artículos que caen en esa categoría.
+
+En las votaciones sucesivas del pleno se agregarán las nuevas versiones en caso de ser aprobadas.
+
+
 ## ¿Esta es la versión definitiva de la nueva constitución?
 **No**, la información de este sitio es una *compilación* del borrador constitucional. Contiene sólo los artículos que se han aprobado hasta el momento y sólo podrán ser modificados por la Comisión de Armonización.
 
@@ -27,11 +40,4 @@ La Convención Constitucional ha formado 7 comisiones de trabajo y cada convenci
 7. Sistemas de Conocimiento
 
 Cada comisiones propone al pleno de la convención los artículos para ser votador, mediante una serie de *informes*. Las y los convencionales pueden proponer *idicaciones* (cambios) a cada artículo y/o sus *incisos* (párrafos).
-
-## ¿Cuántos votos se necesitan para aprobar un artículo?
-**103 votos a favor** o más, que corresponden al menos a *dos tercios* del total de convencionales en ejercicio.
-
-Todos los artículos que se muestran en este sitio han superado los 103 votos a favor.
-
-Aquellos que no han sido aprobados, han sido devueltos a sus comisiones para ser re-formulados y/o quitados definitivamente del debate constitucional.
 
