@@ -1,0 +1,19 @@
+{{ $disabled := cond (isset .Params "bookhidden") "disabled" " "}}
+{{ $ref := .RelPermalink}}
+<a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
+  {{ $number := .Param "weight"}}
+  <img class="comision-img" {{ with $number }} src="/img/com{{.}}.png" {{ end }} alt="">
+  <div class="comision-title">
+    {{ .Param "short-title" }} 
+  </div>
+  <div class="comision-article-count">
+    artículos aprobados: {{ len (where .Pages "Type" "articulo")}}
+  </div>
+  <div class="comision-status"> 
+    <!-- <span>
+      {{ range .Params.status }}
+      <span class="comision-status-icon"></span> 
+      {{ end }}
+    </span> -->
+  </div>
+</a>
