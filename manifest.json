@@ -1,14 +1,14 @@
 {
   "name": "Lee la futura constitución",
   "short_name": "Lee la futura constitución",
-  "start_url": "/borrador.cc-v2/",
-  "scope": "/borrador.cc-v2/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/borrador.cc-v2/favicon.svg",
+      "src": "/favicon.svg",
       "sizes": "512x512"
     }
   ]
