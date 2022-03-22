@@ -4,7 +4,7 @@ long-title: "Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
 short-title: "Sistema Político"
 weight: 1
 status: 
-    -   message: "Votación en general agendada para el viernes 11 de marzo, a las 15:00 horas" 
+    -   message: "Votación en particular agendada para el miércoles 23 de marzo, a las 15:00 horas" 
         document: ""
         link: ""
         
