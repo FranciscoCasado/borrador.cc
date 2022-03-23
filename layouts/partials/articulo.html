@@ -5,7 +5,7 @@
   {{ $id := print "com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
   <h3 id={{ $id }}> {{ $title }} 
     <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
-      <img src="/icons/link.svg" alt="parmalink">
+      <img src="/icons/link.svg" alt="permalink">
     </a></h3>
   {{ partial "docs/post-meta" . }}
   {{- .Content -}}

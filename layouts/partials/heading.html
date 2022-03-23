@@ -4,5 +4,5 @@
 {{ $id := print "com" (.Parent.Param "weight") "-" (anchorize ($long_title))}}
 <h{{$level}} id={{ $id }}> {{ $long_title }} 
 <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
-    <img src="/icons/link.svg" alt="parmalink">
+    <img src="/icons/link.svg" alt="permalink">
 </a></h3>
