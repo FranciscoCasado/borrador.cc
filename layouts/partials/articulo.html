@@ -2,7 +2,7 @@
   {{ $long_title := index .Page.Params "long-title" }}
   {{ $dash := cond (eq $long_title "") "" " - " }}
   {{ $title := print .Title $dash $long_title }}
-  {{ $id := print "com" (.Parent.Param "weight") "-art" (.Param "weight")}}
+  {{ $id := print "com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
   <h3 id={{ $id }}> {{ $title }} 
     <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
       <img src="/icons/link.svg" alt="parmalink">

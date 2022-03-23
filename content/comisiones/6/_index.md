@@ -11,9 +11,11 @@ status:
     -   message: "2ª votación realizada el miércoles 2 de marzo" 
         document: "Oficio 560 - Sesión nº 62 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-560-con-normas-aprobadas-en-particular-Sesion-62-del-Pleno-Informe-2da-propuesta-fea.pdf"
+        
+    -   message: "3ª votación realizada el martes 22 de marzo" 
+        document: ""
+        link: ""
     
 type: "comision"
 ---
 {{< status >}}
-
-## Artículos Aprobados

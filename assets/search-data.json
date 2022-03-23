@@ -5,14 +5,14 @@
 {{- $pages = where $pages "Type" "eq" "articulo" -}}
 
 {{ range $index, $page := $pages }}
-{{ $parent_ref := $page.Parent.RelPermalink}}
+{{ $parent_ref := $page.Parent.Parent.RelPermalink}}
 {{ $title := print $page.Title " - " (index $page.Params "long-title") }}
-{{ $heading_ref := print "#com" (.Parent.Param "weight") "-art" (.Param "weight")}}
+{{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
 {{ if gt $index 0}},{{end}} {
     "id": {{ $index }},
     "href": "{{ print $parent_ref $heading_ref}}",
     "title": "{{ print $title }}",
-    "section": {{ print $page.Parent.Title " · " ($page.Parent.Param "short-title") | jsonify }},
+    "section": {{ print $page.Parent.Parent.Title " · " ($page.Parent.Parent.Param "short-title") | jsonify }},
     "content": {{ $page.Plain | jsonify }}
 }
 {{- end -}}

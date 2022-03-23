@@ -4,8 +4,10 @@
     {{ range $comision := where .Site.Pages "Type" "comision"}}
         {{ if not (isset $comision.Params "bookhidden")}}
           {{ template "comision-heading" . }}
-          {{ range .Pages }}
-            {{ template "entry" .}}
+          {{range .Pages}}
+            {{ range .Pages }}
+              {{ template "entry" .}}
+            {{ end }}
           {{ end }}
         <hr>
         {{ end }}
@@ -36,11 +38,13 @@
     <section class="toc-section">
       {{ template "comision-link" . }}
       {{ range .Pages }}
+      {{ range .Pages }}
         {{ if eq .Type "articulo" }}
           {{ template "article-link" .}}
           {{ else if eq .Type "heading" }}
             {{ template "heading-link" . }}
         {{ end }}
+      {{ end }}
       {{ end }}
     </section>
   {{ end }}
@@ -50,7 +54,7 @@
 
 {{ define "article-link"}}
   {{ $title := print .Title " - " (index .Params "long-title") }}
-  {{ $heading_ref := print "#com" (.Parent.Param "weight") "-art" (.Param "weight")}}
+  {{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
   <a {{with $heading_ref}} href="{{.}}" {{end}} class="toc-l2"> {{$title}}</a>
 {{ end }}
 

@@ -1,12 +1,28 @@
 {{ define "main" }}
   <section class="markdown">
   {{ .Page.Content }}
-  {{ range sort .Paginator.Pages }}
-    {{ if eq .Params.type "articulo"}}
-      {{ partial "articulo" . }}
-    {{ else if eq .Params.type "heading" }}
-      {{ partial "heading" . }}
+  
+  {{ if eq .Type "comision"}}
+    {{ range .Pages }}
+      <section class="informe">
+        <div> {{ .Title }}</div>
+        {{ template "articles" . }}
+      </section>
     {{ end }}
   {{ end }}
+  
+  {{ if eq .Type "informe"}}
+    {{ template "articles" . }}
+  {{ end }}
+    
   </section>
+{{ end }}
+
+
+{{ define "articles"}}
+  {{ range .Pages }}
+  {{ if or (eq .Type "articulo") (eq .Type "heading" )}}
+    {{ partial (.Param "type") . }}
+  {{ end }}
+  {{ end }}
 {{ end }}
