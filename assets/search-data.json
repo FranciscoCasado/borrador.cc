@@ -7,7 +7,7 @@
 {{ range $index, $page := $pages }}
 {{ $parent_ref := $page.Parent.Parent.RelPermalink}}
 {{ $title := print $page.Title " - " (index $page.Params "long-title") }}
-{{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
+{{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-in" (.Parent.Param "number") "-art" (.Param "weight")}}
 {{ if gt $index 0}},{{end}} {
     "id": {{ $index }},
     "href": "{{ print $parent_ref $heading_ref}}",

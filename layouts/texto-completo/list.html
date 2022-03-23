@@ -4,7 +4,8 @@
     {{ range $comision := where .Site.Pages "Type" "comision"}}
         {{ if not (isset $comision.Params "bookhidden")}}
           {{ template "comision-heading" . }}
-          {{range .Pages}}
+          {{ range $informe := .Pages}}
+            {{ .Title}}
             {{ range .Pages }}
               {{ template "entry" .}}
             {{ end }}
@@ -55,7 +56,7 @@
 {{ end }}
 
 {{ define "article-link"}}
-  {{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-art" (.Param "weight")}}
+  {{ $heading_ref := print "#com" (.Parent.Parent.Param "weight") "-in" (.Parent.Param "number") "-art" (.Param "weight")}}
   <a {{with $heading_ref}} href="{{.}}" {{end}}> 
     <span class="toc-marker">{{ .Title }}</span>
     <p class="toc-item">{{ .Param "long-title" }}</p>
