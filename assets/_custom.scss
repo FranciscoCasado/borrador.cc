@@ -93,6 +93,8 @@
         margin: 0;
         margin-bottom: 0.8em;
         text-align: justify;
+        padding-left: 1rem;
+        border-left: solid var(--gray-200) 2px;
     }
 }
 
@@ -140,12 +142,7 @@ a.anchor img{
     font-weight: 50;
 }
 
-.articulo h3::before{
-    content: "\00BB" ;
-    color: var(--gray-500);
-    position: absolute;
-    left: -0.8em;
-}
+
 
 
 .book-page {
