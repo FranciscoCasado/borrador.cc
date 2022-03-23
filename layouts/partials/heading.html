@@ -1,7 +1,7 @@
 {{ $title := .Title }}
 {{ $long_title := index .Page.Params "long-title" }}
 {{ $level := strings.Count "#" .Title}}
-{{ $id := print "com" (.Parent.Param "weight") "-" (anchorize ($long_title))}}
+{{ $id := print "com" (.Parent.Parent.Param "weight") "-" (anchorize ($long_title))}}
 <h{{$level}} id={{ $id }}> {{ $long_title }} 
 <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
     <img src="/icons/link.svg" alt="permalink">

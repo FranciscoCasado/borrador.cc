@@ -1,54 +1,62 @@
 .comisiones {
     counter-reset: coms;
     list-style: none;
-    padding: 0;
-    margin: 0;
     
-    a:visited {
-        color: inherit;
-    }
+    justify-content: center;
+    
+    a,
+    a:visited,
     a:hover {
         color: inherit;
+    }
+    
+    a:hover {
         text-decoration: none;
     }
 }
 
 .comision {
     position: relative;
-    width: 100%;
-    border-radius: 5px;
-    padding: 0;
-    min-height: 3em;
+    max-width: 220px;
+    flex-grow: 1;
+    margin: 0.5em;
     margin-bottom: 0.5em;
     border: 1px solid var(--gray-200);
+    border-radius: 5px;
     box-shadow: 1px 2px 2px var(--gray-200);
+    transition: border ease 50ms, background-color ease 50ms;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .comision:hover {
     border: 1px solid var(--gray-500);
+    background-color: var(--gray-100);
+}
+
+.comision-img {
+    padding: 30px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .comision-title {
     display: block;
-    padding-left: 2em;
-    margin-bottom: 10px;
-    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.5em;
 }
 
-.comision-title::before {
-    counter-increment: coms;
-    content: counter(coms);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2em;
-    height: 100%;
-    text-align: center;
+.comision-article-count {
+    display: block;
+    font-style: italic;
+    font-size: $font-size-14;
+    padding: 0 10px;
 }
 
 .comision-status {
-    display: flex;
-    color: var(--gray-800);
     font-style: italic;
     font-size: 0.9em;
     flex-direction: row;
@@ -85,18 +93,6 @@
     background-image: url("icons/pending.svg");
 }
 
-.articulo {
-    margin-bottom: $padding-16 * 1.5;
-    max-width: 72ch;
-    
-    p {
-        margin: 0;
-        margin-bottom: 0.8em;
-        text-align: justify;
-        padding-left: 1rem;
-        border-left: solid var(--gray-200) 2px;
-    }
-}
 
 .menu-sitio-oficial-convencion {
     color: var(--gray-700);
@@ -114,7 +110,7 @@
 }
 
 .menu-item-link:hover {
-        opacity: 0.5;
+    opacity: 0.5;
 }
 
 a.anchor img{
@@ -123,72 +119,32 @@ a.anchor img{
     width: 15px;
 }
 
-.book-footer {
-    color: var(--gray-700)
-}
-
-.search-result {
-    display: block;
-    padding: 0.2em;
-    margin: 0.5em 0;
-    border-left: solid 3px var(--gray-500);
-    border-radius: 3px;
+.articulo {
+    margin-bottom: $padding-16 * 1.5;
+    max-width: 70ch;
+    
+    p {
+        margin: 0;
+        margin-bottom: 0.8em;
+        text-align: justify;
+        padding-left: 1rem;
+        border-left: solid var(--gray-200) 2px;
+    }
+    
+    li p {
+        border: none;
+    }
 }
 
 .articulo h3 {
     position: relative;
     display: inline;
     font-size: 1.3em;
-    font-weight: 50;
+    max-width: 40ch;
 }
 
 
 
-
-.book-page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0 0;
-}
-
-.book-header {
-    display: block;
-    width: 100%;
-    top: 0;
-    background-color: var(--body-background);
-    border-bottom: solid 1px var(--gray-200);
-    margin-bottom: 0;
-    z-index: 10;
-    box-shadow: 0 4px 5px -2px var(--gray-100);
-    
-    .page-title {
-        padding: 0.5em 0;
-        flex-grow: 1;
-    }
-    
-    .page-title p {
-        margin: 0;
-        font-size: small;
-    }
-    
-    label {
-        display: none;
-        margin: 0.5em;
-    }
-}
-
-.book-content {
-    flex-grow: 1;
-    position: block;
-    padding: 1em;
-    height: 100%;
-    overflow-y: scroll;
-}
-
-.book-footer {
-    margin-bottom: 1em;
-}
 
 .full-text-comision-heading {
     width: fit-content;
@@ -201,14 +157,33 @@ a.anchor img{
 .toc-section{
     display: flex;
     flex-direction: column;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        
+        li a {
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
 }
-
 
 .toc-l1 {
-    padding-left: 1em;
+    font-weight: 550;
+    margin-top: 1rem;
 }
-.toc-l2 {
-    padding-left: 2em;
+
+.toc-item  {
+    display: inline-block;
+    margin: 0;
+}
+.toc-marker {
+    min-width: 3rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    
 }
 
 
@@ -219,19 +194,28 @@ a.anchor img{
         width: 15px;
     }
     
-    .book-header {
-        
-        .page-title strong, p{
-            margin: 0;
-        }
-        
-        label {
-            display: block;
-        }
-
+    .comision {
+        width: 120px;
+        height: 180px;
     }
     
-
+    .comision-img {
+        padding: 0;
+        padding-top: 0.5rem;
+        width: 100px;
+    }
+    
+    .comision-title{
+        bottom: 1rem;
+        line-height: 1em;
+        font-size: $font-size-16;
+    }
+    
+    .comision-article-count{
+        bottom: 0rem;
+        font-size: small;
+    }
+    
     .toc-content{
         max-height: 35vh;
         overflow-y: scroll !important;

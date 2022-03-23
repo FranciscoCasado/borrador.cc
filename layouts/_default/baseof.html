@@ -11,6 +11,11 @@
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
+        
+        {{ $number := print (.Param "weight") }}
+        {{ with $number}}
+        <img src="/img/com{{.}}.png" width="150px" position="absolute" bottom="10px"alt="">
+        {{end}}
       </div>
     </aside>
 
@@ -36,6 +41,7 @@
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
     <aside class="book-toc">
       <div class="book-toc-content">
+        Índice
         {{ template "toc" . }} <!-- Table of Contents -->
       </div>
     </aside>
