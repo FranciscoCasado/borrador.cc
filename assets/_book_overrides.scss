@@ -24,6 +24,7 @@ body {
     margin-bottom: 0;
     z-index: 10;
     box-shadow: 0 4px 5px -2px var(--gray-100);
+    padding-left: $menu-width + $padding-16;
     
     .page-title {
         padding: 0.5em 0;
@@ -66,6 +67,10 @@ body {
     border-radius: 10px;
 }
 
+.book-menu {
+    z-index: 20;
+}
+
 
 @media screen and (max-width: $mobile-breakpoint) {
     .book-header {
@@ -81,3 +86,4 @@ body {
     }
 
 };
+
