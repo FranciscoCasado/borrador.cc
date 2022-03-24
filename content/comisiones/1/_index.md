@@ -4,11 +4,14 @@ long-title: "Sistema Político, Gobierno, Poder Legislativo y Sistema Electoral"
 short-title: "Sistema Político"
 weight: 1
 status: 
-    -   message: "Votación en particular agendada para el miércoles 23 de marzo" 
-        document: ""
-        link: ""
+    -   message: "Última votación: 23 de marzo" 
+        document: "Oficio 647 - Sesión nº 74 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-647-que-informa-las-normas-aprobadas-en-particular-del-primer-informe-de-la-Comision-sobre-Sistema-Politico.pdf"
         
 type: comision
-bookHidden: true
 ---
 {{< status >}}
+
+{{< hint danger >}}
+¿por qué no están *todos* los artículos? [revisa la sección de dudas](/faq/#por-qué-la-numeración-de-los-artículos-no-es-correlativa)
+{{< /hint >}}

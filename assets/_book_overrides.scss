@@ -68,7 +68,7 @@ body {
     height: min-content;
     max-height: 90vh;
     margin: 0.5rem;
-    overflow-y: hidden;
+    overflow-y: scroll !important;
     border: solid 1px var(--gray-200);
     border-radius: 10px;
 }

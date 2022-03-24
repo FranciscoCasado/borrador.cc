@@ -13,8 +13,8 @@ status:
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-560-con-normas-aprobadas-en-particular-Sesion-62-del-Pleno-Informe-2da-propuesta-fea.pdf"
         
     -   message: "Última votación:  22 de marzo" 
-        document: ""
-        link: ""
+        document: "Oficio 645 - Sesiones nº 70 y 73 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-645-que-informa-las-normas-aprobadas-en-particular-del-segundo-informe-de-la-Comision-de-Sistemas-de-Justicia.pdf"
     
 type: "comision"
 ---
