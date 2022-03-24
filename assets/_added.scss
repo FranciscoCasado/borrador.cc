@@ -224,6 +224,10 @@ a.anchor img{
         width: 15px;
     }
     
+    h1, h2, h3 {
+        scroll-margin-top: 25rem;
+    }
+    
     .comisiones {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
