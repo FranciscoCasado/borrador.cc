@@ -4,11 +4,10 @@ h1, h2, h3 {
 }
 
 .comisiones {
-    width: 70%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    gap: 0.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
     
     a,
     a:visited,
@@ -36,7 +35,6 @@ h1, h2, h3 {
     flex-direction: column;
     
     border: 1px solid var(--gray-200);
-    width: 250px;
     padding: 0.5rem;
     border-radius: 5px;
     box-shadow: 1px 2px 2px var(--gray-200);
@@ -101,7 +99,7 @@ h1, h2, h3 {
 }
 
 .disabled .comision-status-icon {
-    width: 5            0px;
+    width: 50px;
     background-image: url("icons/pending.svg");
 }
 
@@ -227,12 +225,13 @@ a.anchor img{
     }
     
     .comisiones {
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
     }
     
     .comision {
-        width: 170px;
+        width: 100%;
     }
     
     .comision-img {
