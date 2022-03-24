@@ -13,5 +13,3 @@ status:
 type: "comision"
 ---
 {{< status >}}
-
-## Artículos Aprobados
