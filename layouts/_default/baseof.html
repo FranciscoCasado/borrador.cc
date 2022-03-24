@@ -10,12 +10,7 @@
   <main class="container flex">
     <aside class="book-menu">
       <div class="book-menu-content">
-        {{ template "menu" . }} <!-- Left menu Content -->
-        
-        {{ $number := print (.Param "weight") }}
-        {{ with $number}}
-        <img src="/img/com{{.}}.png" width="150px" position="absolute" bottom="10px"alt="">
-        {{end}}
+        {{ template "menu" . }} <!-- Left menu Content -->  
       </div>
     </aside>
 
@@ -60,7 +55,7 @@
   {{ partial "docs/header" . }}
 
   {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-  <aside class="hidden clearfix">
+  <aside class="hidden clearfix toc-content">
     {{ template "toc" . }}
   </aside>
   {{ end }}

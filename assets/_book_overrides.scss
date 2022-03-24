@@ -40,8 +40,7 @@ body {
 }
 
 .book-content {
-    padding-top: 1rem;
-    padding-left: 2rem;
+    margin: 1rem;
     position: relative;
     
     article{
@@ -54,18 +53,15 @@ body {
     margin-bottom: 1em;
 }
 
-.book-toc{
-    
-    margin-top: 1rem;
-}
-
 .book-toc-content{
     height: min-content;
     max-height: 90vh;
+    max-width: 25vw;
+    margin: 0.5rem;
     margin-top: 4rem;
     overflow-y: hidden;
-    border: solid 1px var(--gray-100);
-    border-radius: 5px;
+    border: solid 1px var(--gray-200);
+    border-radius: 10px;
 }
 
 

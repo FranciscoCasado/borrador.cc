@@ -143,14 +143,24 @@ a.anchor img{
     max-width: 40ch;
 }
 
+.informe {
+    width: fit-content;
+    background-color: var(--informe-background);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px var(--gray-300);
+    font-family: 'Roboto', 'Open Sans', 'sans';
+}
 
 
 
 .full-text-comision-heading {
     width: fit-content;
-    border-bottom: solid 1px var(--gray-200);
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    padding: 0rem 2rem;
+    margin: 0.5rem 0rem;
+    background-color: var(--gray-200);
+    border-radius: 1rem 1rem 1rem 0.1rem;
 }
 
 

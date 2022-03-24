@@ -5,12 +5,13 @@
         {{ if not (isset $comision.Params "bookhidden")}}
           {{ template "comision-heading" . }}
           {{ range $informe := .Pages}}
-            {{ .Title}}
+          <section class="informe">
+            {{ $informe.Title}}
             {{ range .Pages }}
               {{ template "entry" .}}
             {{ end }}
+          </section>
           {{ end }}
-        <hr>
         {{ end }}
     {{ end }}
   </section>
