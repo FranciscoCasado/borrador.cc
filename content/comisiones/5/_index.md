@@ -12,5 +12,7 @@ status:
 {{< status >}}
 {{< hint danger >}}
 En la primera votación sólo se aprobó el epígrafe *Crisis Climática* y el 2º párrafo del Artículo 1
+    
+&#8594 [revisa la sección de dudas](/faq/#por-qué-la-numeración-de-los-artículos-no-es-correlativa)!
 {{< /hint >}}
 
