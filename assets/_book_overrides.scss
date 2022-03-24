@@ -10,21 +10,22 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-top: 2rem;
     
 }
 
 .book-header {
     display: block;
-    width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
+    width: 100%;
+    max-width: 80rem;
+    
     background-color: var(--body-background);
     border-bottom: solid 1px var(--gray-200);
-    margin-bottom: 0;
+    
     z-index: 10;
     box-shadow: 0 4px 5px -2px var(--gray-100);
-    padding-left: $menu-width + $padding-16;
+    text-align: start;
     
     .page-title {
         padding: 0.5em 0;
@@ -44,8 +45,8 @@ body {
 
 .book-content {
     margin: 0 1rem;
-    padding-top: 2rem;
-    position: relative;
+    display: flex;
+    flex-direction: row;
     
     article{
         max-width: 75ch;
@@ -57,12 +58,16 @@ body {
     margin-bottom: 1em;
 }
 
+.book-toc {
+    display: block;
+}
+
 .book-toc-content{
+    position: sticky;
+    top: 3rem;
     height: min-content;
     max-height: 90vh;
-    max-width: 25vw;
     margin: 0.5rem;
-    margin-top: 4rem;
     overflow-y: hidden;
     border: solid 1px var(--gray-200);
     border-radius: 10px;
@@ -76,6 +81,8 @@ body {
 @media screen and (max-width: $mobile-breakpoint) {
     .book-header {
         
+        padding-left: 0;
+        
         .page-title strong, p{
             margin: 0;
         }
@@ -85,6 +92,9 @@ body {
         }
 
     }
-
+    
+    .book-toc {
+        display: none;
+    }
 };
 

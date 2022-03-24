@@ -6,10 +6,12 @@
           {{ template "comision-heading" . }}
           {{ range $informe := .Pages}}
           <section class="informe">
-            {{ $informe.Title}}
+            <div class="informe-title"> {{ $informe.Title}} </div>
+            <div class="informe-content">
             {{ range .Pages }}
               {{ template "entry" .}}
             {{ end }}
+            </div>
           </section>
           {{ end }}
         {{ end }}

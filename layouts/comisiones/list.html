@@ -4,17 +4,23 @@
   
   {{ if eq .Type "comision"}}
     {{ range .Pages }}
-      <section class="informe">
-        <div> {{ .Title }}</div>
+    <section class="informe">
+      <div class="informe-title"> {{ .Title}} </div>
+      <div class="informe-content">
         {{ template "articles" . }}
+      </div>
       </section>
     {{ end }}
   {{ end }}
   
   {{ if eq .Type "informe"}}
+  <section class="informe">
+    <div class="informe-title"> {{ .Title}} </div>
+    <div class="informe-content">
     {{ template "articles" . }}
+    </div>
+  </section>
   {{ end }}
-    
   </section>
 {{ end }}
 
