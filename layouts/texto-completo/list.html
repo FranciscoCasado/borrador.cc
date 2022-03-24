@@ -21,7 +21,7 @@
 {{ define "comision-heading" }}
     {{ $id := print "com" (.Param "weight")}}
     <div class="full-text-comision-heading" id={{$id}}>
-      {{ .Title }}
+      {{ .Title}} · <b>{{ (.Param "short-title")}}</b>
     </div>
 {{ end }}
 

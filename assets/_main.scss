@@ -102,6 +102,7 @@ html {
     .book-menu-content {
       width: $menu-width;
       padding: $padding-16;
+      padding-top: 3rem;
       background: var(--body-background);
   
       @include fixed;
