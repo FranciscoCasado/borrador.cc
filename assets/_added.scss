@@ -1,9 +1,14 @@
+    
+h1, h2, h3 {
+    scroll-margin-top: 4rem;
+}
+
 .comisiones {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(150px, auto);
-    gap: 0.5rem;
+    gap: 0.8rem;
     
     a,
     a:visited,
@@ -96,7 +101,7 @@
 }
 
 .disabled .comision-status-icon {
-    width: 50px;
+    width: 5            0px;
     background-image: url("icons/pending.svg");
 }
 
@@ -223,6 +228,7 @@ a.anchor img{
     
     .comisiones {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
     
     .comision {
