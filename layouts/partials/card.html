@@ -1,0 +1,33 @@
+{{ $disabled := cond (isset .Params "bookhidden") "disabled" " "}}
+{{ $ref := .RelPermalink}}
+<a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
+  {{ $number := print (.Param "weight")}}
+  <!-- <img class="comision-img" {{ with $number }} src="/img/com{{.}}.png" {{ end }} alt=""> -->
+  <div class="comision-title">
+    {{ upper (.Param "short-title") }}
+  </div>
+  <div class="comision-status"> 
+    {{ if isset .Params "status"}}
+      <span class="comision-status-icon"></span>
+      <div>
+      {{ range last 1 .Params.status }}
+        <div>{{.message}}</div>
+      {{end}}
+        <div class="comision-article-count">
+          {{ $data := newScratch}}
+          {{ $data.Set "articulos" 0}}
+          {{ $data.Set "informes" 0}}
+          {{ range .Pages }}
+            {{ $data.Add "articulos" (len (where .Pages "Type" "articulo"))}}
+            {{ $data.Add "informes" 1}}
+          {{ end }}
+          {{ if ge ($data.Get "articulos") 1 }}
+            {{ $data.Get "articulos" }} artículos - 
+            {{ $data.Get "informes" }} informe(s)
+          {{ end }}
+        </div>
+      </div>
+    
+    {{ end }}
+  </div>
+</a>

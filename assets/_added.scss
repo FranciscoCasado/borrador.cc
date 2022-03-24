@@ -1,0 +1,264 @@
+    
+h1, h2, h3 {
+    scroll-margin-top: 4rem;
+}
+
+.comisiones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    
+    a,
+    a:visited,
+    a:hover {
+        color: inherit;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    > :last-child {
+        text-align: center;
+        
+        .comision-title {
+            position: relative;
+            top: 40%;
+            display: block;
+        }
+    }
+}
+
+.comision {
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid var(--gray-200);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px var(--gray-200);
+    transition: border ease 50ms, background-color ease 50ms;
+    
+}
+
+.comision:hover {
+    border: 1px solid var(--gray-300);
+    background-color: var(--gray-100);
+}
+
+.comision-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.comision-title {
+    display: block;
+    flex-grow: 1;
+    color: var(--gray-800);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.comision-status {
+    display: flex;
+    font-size: $font-size-14;
+}
+
+.comision-status-icon {
+    display: block;
+    width: 30px;
+    background-image: url("icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 50%;
+}
+.comision-article-count {
+    display: block;
+    font-size: $font-size-14;
+    font-style: italic;
+    color: var(--gray-700);
+}
+
+
+
+.disabled {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-100);
+    pointer-events: none;
+    
+    .comision-title, .comision-status {
+        color: var(--gray-700);
+    }
+    
+    box-shadow: none;
+}
+
+.disabled:hover {
+    border: 1px solid var(--gray-100);
+}
+
+.disabled .comision-status-icon {
+    width: 50px;
+    background-image: url("icons/pending.svg");
+}
+
+
+.menu-sitio-oficial-convencion {
+    color: var(--gray-700);
+    a {
+        color: var(--body-font-color);
+        text-decoration: underline;
+    }
+}
+
+.menu-item, .menu-item-link {
+    font-size: large;
+    border: black;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+
+.menu-item-link:hover {
+    opacity: 0.5;
+}
+
+a.anchor img{
+    opacity: 0.7;
+    height: 15px;
+    width: 15px;
+}
+
+.articulo {
+    margin-bottom: $padding-16 * 1.5;
+    max-width: 70ch;
+    
+    p {
+        margin: 0;
+        margin-bottom: 0.8em;
+        text-align: justify;
+        padding-left: 1rem;
+        border-left: solid var(--gray-200) 2px;
+    }
+    
+    li p {
+        border: none;
+    }
+}
+
+.articulo h3 {
+    position: relative;
+    display: inline;
+    font-size: 1.3em;
+    max-width: 40ch;
+}
+
+.informe {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 10px var(--gray-300);
+    font-family: 'Roboto', 'Open Sans', 'sans';
+}
+
+.informe-content {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+}
+    
+.informe-title {
+    display: block;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: var(--gray-700);
+    background-color: var(--gray-200);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.full-text-comision-heading {
+    width: fit-content;
+    padding: 0rem 2rem;
+    margin: 0.5rem 0rem;
+    background-color: var(--gray-200);
+    border-radius: 1rem 1rem 1rem 0.1rem;
+}
+
+
+.toc-section{
+    display: flex;
+    flex-direction: column;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        
+        li a {
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
+}
+
+.toc-l1 {
+    font-weight: 550;
+    margin-top: 1rem;
+}
+
+.toc-item  {
+    display: inline-block;
+    margin: 0;
+}
+.toc-marker {
+    min-width: 3rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    
+}
+
+
+@media screen and (max-width: $mobile-breakpoint) {
+    a.anchor {
+        opacity: 0.6 !important;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .comisiones {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .comision {
+        width: 100%;
+    }
+    
+    .comision-img {
+        padding: 0;
+        padding-top: 0.5rem;
+        width: 100px;
+    }
+    
+    .comision-title{
+        bottom: 1rem;
+        line-height: 1em;
+        font-size: $font-size-16;
+    }
+    
+    .comision-article-count{
+        bottom: 0rem;
+        font-size: small;
+    }
+    
+    .toc-content{
+        max-height: 35vh;
+        overflow-y: scroll !important;
+    }
+    
+    #toc-label {
+        display: flex;
+        align-items: center;
+    }
+    
+};

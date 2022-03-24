@@ -7,38 +7,41 @@
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
+
   <main class="container flex">
     <aside class="book-menu">
       <div class="book-menu-content">
-        {{ template "menu" . }} <!-- Left menu Content -->
+        {{ template "menu" . }} <!-- Left menu Content -->  
       </div>
     </aside>
-
+    
     <div class="book-page">
-
       <header class="book-header">
         {{ template "header" . }} <!-- Mobile layout header -->
       </header>
       <div class="book-content">
-        {{ partial "docs/inject/content-before" . }}
-        {{ template "main" . }} <!-- Page Content -->
-        {{ partial "docs/inject/content-after" . }}
+        <div>
+          {{ partial "docs/inject/content-before" . }}
+          {{ template "main" . }} <!-- Page Content -->
+          {{ partial "docs/inject/content-after" . }}
 
-        <footer class="book-footer">
-            {{ template "footer" . }} <!-- Footer under page content -->
-            {{ partial "docs/inject/footer" . }}
-        </footer>
+          <footer class="book-footer">
+              {{ template "footer" . }} <!-- Footer under page content -->
+              {{ partial "docs/inject/footer" . }}
+          </footer>
+          {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+        </div>
+        <aside class="book-toc">
+          <div class="book-toc-content">
+            Índice
+            {{ template "toc" . }} <!-- Table of Contents -->
+          </div>
+        </aside>
       </div>
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
+      
     </div>
-
-    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        {{ template "toc" . }} <!-- Table of Contents -->
-      </div>
-    </aside>
     {{ end }}
   </main>
 
@@ -54,7 +57,7 @@
   {{ partial "docs/header" . }}
 
   {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-  <aside class="hidden clearfix">
+  <aside class="hidden clearfix toc-content">
     {{ template "toc" . }}
   </aside>
   {{ end }}

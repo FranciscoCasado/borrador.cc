@@ -232,8 +232,6 @@ html {
     .book-toc-content {
       width: $toc-width;
       padding: $padding-16;
-  
-      @include fixed;
     }
   
     img {
