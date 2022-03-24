@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="markdown">
   {{ .Page.Content }}
-  <div class="comisiones flex flex-wrap">
+  <div class="comisiones">
     {{range $comision := where .Site.Pages "Type" "comision"}}
       {{ partial "card" . }}
     {{ end }}
