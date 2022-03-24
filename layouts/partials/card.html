@@ -8,7 +8,6 @@
   </div>
   <div class="comision-status"> 
     {{ if isset .Params "status"}}
-      <span class="comision-status-icon"></span>
       <div>
       {{ range last 1 .Params.status }}
         <div>{{.message}}</div>

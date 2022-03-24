@@ -63,9 +63,11 @@ h1, h2, h3 {
 .comision-status {
     display: flex;
     font-size: $font-size-14;
+    margin-top: 1em;
 }
 
 .comision-status-icon {
+    /*not in use*/
     display: block;
     width: 30px;
     background-image: url("icons/check.svg");
@@ -73,6 +75,7 @@ h1, h2, h3 {
     background-position: 50% 25%;
     background-size: 50%;
 }
+
 .comision-article-count {
     display: block;
     font-size: $font-size-14;
