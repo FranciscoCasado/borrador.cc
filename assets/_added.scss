@@ -140,8 +140,16 @@ a.anchor img{
         margin: 0;
         margin-bottom: 0.8em;
         text-align: justify;
+        
         padding-left: 1rem;
         border-left: solid var(--gray-200) 2px;
+        
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        /*Y seguidamente word-wrap como graceful degradation para los navegadores que no lo soporten*/
+        word-wrap: break-word;
     }
     
     li p {
