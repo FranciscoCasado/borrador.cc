@@ -13,9 +13,4 @@ status:
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-659-que-informa-las-normas-aprobadas-en-particular-del-informe-de-reemplazo-y-2da-propuesta-Com-Medio-Ambiente.pdf"
 ---
 {{< status >}}
-{{< hint danger >}}
-En la primera votación sólo se aprobó el epígrafe *Crisis Climática* y el 2º párrafo del Artículo 1
-    
-&#8594 [revisa la sección de dudas](/faq/#por-qué-la-numeración-de-los-artículos-no-es-correlativa)!
-{{< /hint >}}
 

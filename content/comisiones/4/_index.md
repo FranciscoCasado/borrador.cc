@@ -4,12 +4,12 @@ long-title: "Derechos Fundamentales"
 short-title: "Derechos Fundamentales"
 weight: 4
 status: 
-    -   message: "Última votación: 15 de marzo" 
+    -   message: "1ª votación: 15 de marzo" 
         document: "Oficio 662 - Sesión nº 68 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-622-que-comunica-las-normas-aprobadas-en-la-sesion-68a-del-Pleno-de-la-Convencion-Constitucional.pdf"
+    -   message: "Última votación: 31 de marzo" 
+        document: "Oficio 669 - Sesión nº 77 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-669-con-normas-aprobadas-en-particular-Sesion-77-del-Pleno-votacion-informe-de-reemplazo-Com.-DDFF-FEA.pdf"
 type: "comision"
 ---
 {{< status >}}
-{{< hint danger >}}
-¿por qué no están *todos* los artículos? [revisa la sección de dudas](/faq/#por-qué-la-numeración-de-los-artículos-no-es-correlativa)
-{{< /hint >}}
