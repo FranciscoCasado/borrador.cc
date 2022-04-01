@@ -13,8 +13,8 @@ title: "Borrador Constitucional | La hoja ya no está en blanco &#128214"
 {{< details "**¿Cómo usar esta página?**">}}
 - El trabajo de la Convención se separa en 7 comisiones
 - Cada comisión escribe *informes* que luego son votados, artículo por artículo, por el pleno (154 convencionales)
-- Aquellos artículos que superan los famosos **2/3** se consideran aprobados y pasan al *Borrador Constitucional*
-- Este sitio todos los artículos que ya forman parte del *Borrador Constitucional*
+- Aquellos artículos que superan los **2/3** (103 votos) se consideran aprobados y pasan al *Borrador Constitucional*
+- Este sitio están todos los artículos que ya forman parte del *Borrador Constitucional*
 
 - Usar el **buscador &#128269** en la barra lateral izquierda para buscar en todo el texto!
 
