@@ -28,6 +28,6 @@ Los artículos expuestos en este sitio son una copia *tal cual* de los textos pu
 
 
 # 
-Desarrollado por [Francisco Casado](https://github.com/FranciscoCasado) 
+Desarrollado para Chile y sus pueblos por [Francisco Casado](https://github.com/FranciscoCasado) 
 
-Si te interesa colaborar, [escríbeme &#9997](mailto:hola@franciscocasado.cl)
+Si tienes sugerencias y/o quieres colaborar, escríbeme &#9997 a [contacto@leelanuevaconstitucion.cl](mailto:contacto@leelanuevaconstitucion.cl)
