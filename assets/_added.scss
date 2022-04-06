@@ -36,7 +36,7 @@ h1, h2, h3 {
     flex-direction: column;
     
     border: 1px solid var(--gray-200);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     box-shadow: 1px 2px 2px var(--gray-200);
     transition: border ease 50ms, background-color ease 50ms;
@@ -283,3 +283,72 @@ a.anchor img{
     }
     
 };
+
+
+
+
+.importan-dates {
+    justify-content: center;
+    align-items: center;
+}
+
+.important-dates-heading {
+    margin-top: 2rem;
+}
+
+.important-dates-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto 0;
+    justify-content: center;
+}
+
+.date {
+    display: block;
+    width: 150px;
+    margin: 0.1rem;
+    text-align: center;
+    border: solid 1px var(--gray-200);
+    border-radius: 5px;
+        
+    p  {
+        margin: 0;
+        font-size: small;
+        padding: 0.5em;
+    }
+}
+
+li.date::marker {
+    content: "";
+}
+
+    
+.date-day {
+    display: block;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.date-month{
+    display: block;
+    font-style: italic;
+    padding-bottom: 0.5rem;
+}
+
+.date-day,
+.date-month {
+    background-color: var(--gray-200);
+    color: var(--gray-800);
+}
+
+.date:last-of-type {
+    .date-day,
+    .date-month {
+        background-color: rgba(217, 73, 60, 0.766);
+        color: white;
+    }
+}
