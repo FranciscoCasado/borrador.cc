@@ -328,27 +328,24 @@ li.date::marker {
     display: block;
     font-size: 2rem;
     font-style: italic;
-    font-weight: 600;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    font-weight: bold;
+    color: var(--gray-700);
 }
 
 .date-month{
     display: block;
     font-style: italic;
-    padding-bottom: 0.5rem;
+    padding: 0.2rem 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: var(--gray-700);
+    background-color: var(--gray-300);
+    color: white;
 }
 
-.date-day,
-.date-month {
-    background-color: var(--gray-200);
-    color: var(--gray-800);
-}
-
-.date:last-of-type {
-    .date-day,
+.date:last-child {
+    
     .date-month {
-        background-color: rgba(217, 73, 60, 0.766);
-        color: white;
+        background-color: rgba(221, 48, 42, 0.723);
     }
 }
