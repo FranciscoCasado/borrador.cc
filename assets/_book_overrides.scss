@@ -77,6 +77,14 @@ body {
     z-index: 20;
 }
 
+.book-menu-content {
+    display: flex;
+}
+
+.book-content nav:last-child {
+    align-items: flex-end;
+}
+
 
 @media screen and (max-width: $mobile-breakpoint) {
     .book-header {
