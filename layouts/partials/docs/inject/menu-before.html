@@ -1,7 +1,12 @@
-<div class="menu-sitio-oficial-convencion">
-    Sitio Oficial de la Convencion:
-    <a href="https://www.chileconvencion.cl/">chileconvencion.cl</a>
+<div class="disclaimer">
+    <img src="/icons/ex_mark.svg" alt=""><p>Este sitio es un aporte ciudadano &#8212 NO es un canal oficial de la Convención</p>
 </div>
-<hr>
+{{ $about := relref . "about" }}
+<h3><a class="menu-item-link" {{with $about}}href="{{.}}" {{end}}>Sobre este sitio</a></h3>
+{{ $faq := relref . "faq" }}
+<h3><a class="menu-item-link" {{with $faq}}href="{{.}}" {{end}}>¿Tienes dudas?</a></h3>
 
+
+
+<hr>
 <h3><a class="menu-item-link" href="/texto-completo">Texto Completo</a></h3>

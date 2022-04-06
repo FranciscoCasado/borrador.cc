@@ -1,5 +1,9 @@
 <hr>
-{{ $about := relref . "about" }}
-<h3><a class="menu-item-link" {{with $about}}href="{{.}}" {{end}}>Sobre este sitio</a></h3>
-{{ $faq := relref . "faq" }}
-<h3><a class="menu-item-link" {{with $faq}}href="{{.}}" {{end}}>¿Tienes dudas?</a></h3>
+
+<a class="external-link" href="https://www.chileconvencion.cl/">
+    <img src="/icons/ext_link.svg" alt="">
+    <div>
+        <p>Sitio Oficial Convencion:</p>
+        <p class="url">chileconvencion.cl</p>
+    </div>
+</a>

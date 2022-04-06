@@ -335,6 +335,7 @@ li.date::marker {
 .date-month{
     display: block;
     font-style: italic;
+    font-weight: 600;
     padding: 0.2rem 0;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -347,5 +348,75 @@ li.date::marker {
     
     .date-month {
         background-color: rgba(221, 48, 42, 0.723);
+    }
+}
+
+
+.disclaimer {
+    display: flex;
+    padding: 1em;
+    
+    border-radius: 6px;
+    background-color: var(--gray-100);
+    background: linear-gradient(30deg, var(--gray-100), var(--body-background) 100%);
+    
+    img {
+        position: relative;
+        top: 3px;
+        width: 10px;
+        height: 15px;
+    };
+    
+    p {
+        margin: 0;
+        line-height: 1.4em;
+        color: var(--gray-800);
+        padding-left: 0.5em;
+        
+        em {
+            font-style: normal;
+            font-weight: lighter;
+        }
+    }
+}
+
+
+.external-link {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px var(--gray-300);
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    
+    img {
+        display: block;
+        position:relative;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        padding-right: 0.5em;
+        
+    }
+    
+    p {
+        display: block;
+        margin: 0;
+        padding-left: 0.5em;
+        border-left: solid 1px var(--gray-300);;
+    }
+    
+    p.url {
+        text-decoration: underline;
+    }
+    
+}
+
+.external-link:hover {
+    
+    background-color: var(--gray-100);
+    
+    p.url {
+        text-decoration: underline;
+        color: var(--gray-800);
     }
 }
