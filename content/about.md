@@ -36,3 +36,7 @@ Con tu familia, tu barrio, tu escuela o tu trabajo!
 Desarrollado para Chile y sus pueblos por [Francisco Casado](https://github.com/FranciscoCasado/)
 
 Si tienes sugerencias y/o quieres colaborar, escríbeme &#9997 a [contacto@leelanuevaconstitucion.cl](mailto:contacto@leelanuevaconstitucion.cl)
+
+#
+*Si te gusta `programar` puedes abrir un PR/issue en [Github](https://github.com/FranciscoCasado/borrador.cc/) con toda confianza*
+  
