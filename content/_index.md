@@ -7,7 +7,7 @@ title: "Borrador Constitucional | La hoja ya no está en blanco &#128214"
 {{< hint info >}} 
 &#9432 Aún no se votan *todos* los informes de las comisiones!
 
-*Última actualización:* 11 de abril de 2022, 20:24 horas
+*Última actualización:* 11 de abril de 2022
 {{< /hint >}}
 
 {{< details "**¿Cómo usar esta página?**">}}
