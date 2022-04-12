@@ -7,9 +7,12 @@ status:
     -   message: "1ª votación: 16 de marzo" 
         document: "Oficio 627 - Sesión nº 69 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-627-con-normas-aprobadas-en-particular-Sesion-69-del-Pleno-votacion-informe-de-reemplazo-Com-sistemas.pdf"
-    -   message: "Última votación: 02 de abril" 
+    -   message: "2ª votación: 02 de abril" 
         document: "Oficio 672 - Sesión nº 78 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-672-mediante-el-cual-se-informan-las-normas-aprobadas-en-particular-2do-informe-de-la-Com.-sobre-Principios.pdf"
+    -   message: "Última votación: 11 de abril" 
+        document: ""
+        link: ""
 type: "comision"
 ---
 {{< status >}}
