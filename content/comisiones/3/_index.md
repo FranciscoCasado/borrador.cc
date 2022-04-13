@@ -13,9 +13,13 @@ status:
     -   message: "3ª votación: 23 de marzo" 
         document: "Oficio 649 - Sesión nº 74 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-649-que-informa-las-normas-aprobadas-de-la-segunda-nueva-propuesta-de-la-Com.-Forma-de-Estado.pdf"
-    -   message: "Última votación: 29 de marzo" 
+    -   message: "4º votación: 29 de marzo" 
         document: "Oficio 667 - Sesión nº 76 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-667-con-normas-aprobadas-en-particular-Sesion-76-del-Pleno-votacion-segundo-informe-Com.-Forma-de-Estado.pdf"
+    -   message: "Última votación: 12 de abril" 
+        document: "Oficio 700 - Sesión nº 81 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-700-con-normas-aprobadas-en-particular-Sesion-81-del-Pleno-votacion-3-3-fea.pdf"
+        
 type: "comision"
 ---
 {{< status >}}

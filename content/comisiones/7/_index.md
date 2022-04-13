@@ -10,9 +10,13 @@ status:
     -   message: "2ª votación: 16 de marzo" 
         document: "Oficio 629 - Sesión nº 69 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-629-con-normas-aprobadas-en-particular-Sesion-69-del-Pleno-Com.-Sist-Conocimientos.pdf"
-    -   message: "Última votación: 05 de abril" 
+    -   message: "3ª votación: 05 de abril" 
         document: "Oficio 680 - Sesión nº 79 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-680-informas-normas-aprobadas-del-segundo-informa-de-la-Com.-sobre-Sistemas-de-Conocimentos.pdf"
+    -   message: "Última votación: 12 de abril" 
+        document: "Oficio 698 - Sesión nº 81 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-698-2da-propuesta-de-la-Com.-sobre-Sistemas-de-Conocimientos-FEA.pdf"
+        
 type: "comision"
 ---
 {{< status >}}
