@@ -17,7 +17,3 @@ status:
 type: comision
 ---
 {{< status >}}
-
-{{< hint danger >}}
-¿por qué no están *todos* los artículos? [revisa la sección de dudas](/faq/#por-qué-la-numeración-de-los-artículos-no-es-correlativa)
-{{< /hint >}}
