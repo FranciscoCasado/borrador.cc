@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;350;400&display=swap');
     
+
 h1, h2, h3 {
     scroll-margin-top: 4rem;
 }
@@ -135,14 +137,14 @@ a.anchor img{
 
 .articulo {
     margin-bottom: $padding-16 * 1.5;
-    max-width: 70ch;
+    width: 100%;
     
     p {
         margin: 0;
         margin-bottom: 0.8em;
         text-align: justify;
         
-        padding-left: 1rem;
+        padding-left: 0.5rem;
         border-left: solid var(--gray-200) 2px;
         
         -webkit-hyphens: auto;
@@ -153,28 +155,52 @@ a.anchor img{
         word-wrap: break-word;
     }
     
+    ol {
+        border-left: solid var(--gray-200) 2px;
+    }
+    
     li p {
         border: none;
     }
 }
 
 .articulo h3 {
-    position: relative;
-    display: inline;
+    margin-top: 0;
+    display: inline-block;
+    // position: sticky;
+    // top: 3.5rem;
     font-size: 1.3em;
-    max-width: 40ch;
+    padding-left: 0.5rem;
+    border-left: solid var(--gray-700) 2px;
+    background-color: var(--body-background);
+    width: 100%;
+}
+
+.article-number{
+    padding-right: 0.5rem;
+    height: min-content;
+    width: 8ch;
+    position: sticky;
+    top: 3.5rem;
+    text-align: center;
+}
+
+.article-content {
+    min-width: 90%;
+    max-width: 70ch;
+    padding-right: 0.5rem;
 }
 
 .informe {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 2px 4px 10px var(--gray-300);
-    font-family: 'Roboto', 'Open Sans', 'sans';
+    //box-shadow: 2px 4px 10px var(--gray-300);
+    font-family: 'Roboto Slab', 'Roboto', 'Open Sans', 'sans';
+    font-weight: 350;
+    width: fit-content;
 }
 
 .informe-content {
-    width: fit-content;
-    padding: 1rem 1.5rem;
 }
     
 .informe-title {
@@ -184,6 +210,7 @@ a.anchor img{
     background-color: var(--gray-200);
     text-align: center;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .informe-content h1,
@@ -270,6 +297,11 @@ a.anchor img{
     .comision-article-count{
         bottom: 0rem;
         font-size: small;
+    }
+    
+    .articulo h3,
+    .article-number {
+        top: 4rem;
     }
     
     .toc-content{
