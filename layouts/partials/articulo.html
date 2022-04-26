@@ -1,12 +1,16 @@
-<article class="markdown articulo">
+{{ $id := print "com" (.Parent.Parent.Param "weight") "-in" (.Parent.Param "number") "-art" (.Param "weight")}}
+<article  id={{ $id }} class="articulo flex">
   {{ $long_title := index .Page.Params "long-title" }}
-  {{ $dash := cond (eq $long_title "") "" " - " }}
-  {{ $title := print .Title $dash $long_title }}
-  {{ $id := print "com" (.Parent.Parent.Param "weight") "-in" (.Parent.Param "number") "-art" (.Param "weight")}}
-  <h3 id={{ $id }}> {{ $title }} 
-    <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
+  <div class=" article-number"> {{ .Title }} 
+    <!-- <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
       <img src="/icons/link.svg" alt="permalink">
-    </a></h3>
+    </a> -->
+  </div>
   {{ partial "docs/post-meta" . }}
-  {{- .Content -}}
+  <div class="article-content">
+    {{ if ne $long_title "" }}
+      <h3>{{ $long_title }}</h3>
+    {{ end }}
+    {{- .Content -}}
+  </div>
 </article>
