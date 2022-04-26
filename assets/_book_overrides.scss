@@ -44,14 +44,9 @@ body {
 }
 
 .book-content {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     display: flex;
     flex-direction: row;
-    
-    article{
-        max-width: 75ch;
-    }
-    
 }
 
 .book-footer {
