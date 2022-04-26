@@ -137,7 +137,6 @@ a.anchor img{
 
 .articulo {
     margin-bottom: $padding-16 * 1.5;
-    width: 100%;
     
     p {
         margin: 0;
@@ -197,7 +196,7 @@ a.anchor img{
     //box-shadow: 2px 4px 10px var(--gray-300);
     font-family: 'Roboto Slab', 'Roboto', 'Open Sans', 'sans';
     font-weight: 350;
-    width: fit-content;
+    max-width: 80ch;
 }
 
 .informe-content {
