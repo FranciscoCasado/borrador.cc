@@ -16,9 +16,13 @@ status:
         document: "Oficio 645 - Sesiones nº 70 y 73 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-645-que-informa-las-normas-aprobadas-en-particular-del-segundo-informe-de-la-Comision-de-Sistemas-de-Justicia.pdf"
     
-    -   message: "Última votación:  11 de abril" 
+    -   message: "4ª votación: 11 de abril" 
         document: "Oficio 697 - Sesión nº 80 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-697-mediante-el-cual-se-informan-las-normas-aprobadas-del-informe-de-segunda-propuesta-de-la-Com.-sobre-Sistemas-de-justicia-segundo-informe.pdf"
+    
+    -   message: "Última votación:  27 de abril" 
+        document: "Oficio 736 - Sesión nº 90 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-N%C2%B0736-que-informa-normas-aprobadas-en-la-sesion-90a-2da-propuesta-del-ll-informe-Com.-Sistemas-de-Conocimientos.pdf"
     
 type: "comision"
 ---
