@@ -20,10 +20,13 @@ status:
         document: "Oficio 696 - Sesión nº 80 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-696-mediante-el-cual-se-informan-las-normas-aprobadas-de-la-2da-nueva-propuesta-del-primer-informe-de-la-Com-sobre-Principios.pdf"
         
-    
-    -   message: "Última votación: 18 de abril" 
+    -   message: "5ª votación: 18 de abril"
         document: "Oficio 711 - Sesión nº 84 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-711-con-normas-aprobadas-en-la-sesion-84a-2-3-Com.-sobre-Principios.pdf"
+
+    -   message: "Última votación: 28 de abril"
+        document: "Oficio 738 - Sesión nº 91 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-738-con-normas-aprobadas-en-particular-Sesion-91-del-Pleno-votacion-2-2-2da-propuesta-FEA.pdf"
         
 type: "comision"
 ---
