@@ -2,7 +2,7 @@
 {{ $ref := .RelPermalink}}
 <a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
   {{ $number := print (.Param "weight")}}
-  <!-- <img class="comision-img" {{ with $number }} src="/img/com{{.}}.png" {{ end }} alt=""> -->
+  <img class="comision-img" {{ with $number }} src="/img/com{{.}}.jpeg" {{ end }} alt="">
   <div class="comision-title">
     {{ upper (.Param "short-title") }}
   </div>

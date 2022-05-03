@@ -36,11 +36,11 @@ h1, h2, h3 {
 .comision {
     display: flex;
     flex-direction: column;
-    
-    border: 1px solid var(--gray-200);
     padding: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 1px 2px 2px var(--gray-200);
+    
+    // border: 1px solid var(--gray-200);
+    //border-radius: 5px;
+    // box-shadow: 1px 2px 2px var(--gray-200);
     transition: border ease 50ms, background-color ease 50ms;
     
 }
@@ -52,7 +52,7 @@ h1, h2, h3 {
 
 .comision-img {
     max-width: 200px;
-    max-height: 200px;
+    border-radius: 1rem;
 }
 
 .comision-title {
@@ -279,12 +279,11 @@ a.anchor img{
     
     .comision {
         width: 100%;
+        align-items: center;
     }
     
     .comision-img {
-        padding: 0;
-        padding-top: 0.5rem;
-        width: 100px;
+        width: 120px;
     }
     
     .comision-title{
