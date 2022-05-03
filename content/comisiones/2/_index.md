@@ -24,9 +24,18 @@ status:
         document: "Oficio 711 - Sesión nº 84 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-711-con-normas-aprobadas-en-la-sesion-84a-2-3-Com.-sobre-Principios.pdf"
 
-    -   message: "Última votación: 28 de abril"
+    -   message: "6ª votación: 28 de abril"
         document: "Oficio 738 - Sesión nº 91 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-738-con-normas-aprobadas-en-particular-Sesion-91-del-Pleno-votacion-2-2-2da-propuesta-FEA.pdf"
+
+    -   message: "7ª votación: 2 de mayo"
+        document: "Oficio 744 - Sesión nº 93 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-744-con-normas-aprobadas-en-particular-Sesion-93-del-Pleno-votacion-2-1-nueva-2da-propuesta-fea.pdf"
+
+    -   message: "8ª votación: 2 de mayo"
+        document: "Oficio 745 - Sesión nº 93 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-745-con-normas-aprobadas-en-particular-Sesion-93-del-Pleno-votacion-2-3-2da-propuesta-fea.pdf"
+        
         
 type: "comision"
 ---
