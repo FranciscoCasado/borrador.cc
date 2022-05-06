@@ -19,9 +19,12 @@ status:
     -   message: "5ª votación: 12 de abril" 
         document: "Oficio 700 - Sesión nº 81 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-700-con-normas-aprobadas-en-particular-Sesion-81-del-Pleno-votacion-3-3-fea.pdf"
-    -   message: "Última votación: 26 de abril" 
+    -   message: "6ª votación: 26 de abril" 
         document: "Oficio 731 - Sesión nº 89 del pleno"    
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-731-que-informa-las-normas-aprobadas-en-la-sesion-89a-2da-del-2do-informe-Com.-de-Forma-de-Estado.pdf"
+    -   message: "Última votación: 6 de mayo" 
+        document: "Oficio 753 - Sesión nº 96 del pleno"    
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-753-con-normas-aprobadas-en-particular-Sesion-96-del-Pleno-votacion-3-3-2da-propuesta.pdf"
         
 type: "comision"
 ---

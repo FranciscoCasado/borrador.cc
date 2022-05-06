@@ -16,9 +16,12 @@ status:
     -   message: "4ª votación: 12 de abril" 
         document: "Oficio 698 - Sesión nº 81 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-698-2da-propuesta-de-la-Com.-sobre-Sistemas-de-Conocimientos-FEA.pdf"
-    -   message: "Última votación: 20 de abril" 
+    -   message: "5ª votación: 20 de abril" 
         document: "Oficio 716 - Sesión nº 86 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-716-con-normas-aprobadas-en-particular-Sesion-86-del-Pleno-votacion-7-3-FEA.pdf"
+    -   message: "Última votación: 5 de mayo" 
+        document: "Oficio 754 - Sesión nº 96 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-754-con-normas-aprobadas-en-particular-Sesion-96-del-Pleno-7-3-2da-propuesta.pdf"
         
 type: "comision"
 ---
