@@ -11,8 +11,11 @@ status:
     -   message: "2ª votación: 25 de marzo" 
         document: "Oficio 659 - Sesión nº 75 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/03/Oficio-659-que-informa-las-normas-aprobadas-en-particular-del-informe-de-reemplazo-y-2da-propuesta-Com-Medio-Ambiente.pdf"
-    -   message: "Última votación: 18 de abril" 
+    -   message: "3ª votación: 18 de abril" 
         document: "Oficio 710 - Sesión nº 84 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-710-normas-aprobadas-segundo-nuevo-informe-de-la-Com.-sobre-Medio-Ambiente-fea.pdf"
+    -   message: "Última votación: 7 de mayo" 
+        document: "Oficio 756 - Sesión nº 98 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-756-con-normas-aprobadas-en-particular-Sesion-98-del-Pleno-5-2-IR.pdf"
 ---
 {{< status >}}
