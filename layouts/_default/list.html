@@ -1,14 +1,18 @@
 {{ define "main" }}
   <section class="markdown">
-  {{ .Page.Content }}
-  <div class="comisiones">
-    {{range $comision := where .Site.Pages "Type" "comision"}}
-      {{ partial "card" . }}
-    {{ end }}
-    {{ $full_text := .GetPage "texto-completo" }}
-    {{ partial "card" $full_text }}
-  </div>
+    {{ .Page.Content }}
+    <div class="comisiones">
+      {{range $comision := where .Site.Pages "Type" "comision"}}
+        {{ partial "card" . }}
+      {{ end }}
+      {{ $full_text := .GetPage "texto-completo" }}
+    </div>
   </section>
+  
+  <section class="full-text">
+    {{ partial "card" $full_text }}
+  </section>
+  
   <section class="important-dates">
     <h2 class="important-dates-heading">Fechas Importantes</h2>
     <ul class="important-dates-list">

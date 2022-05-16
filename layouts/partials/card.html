@@ -2,16 +2,13 @@
 {{ $ref := .RelPermalink}}
 <a {{ with $ref }} href="{{.}}" {{ end }} {{ with $disabled }} class="comision {{.}}" {{ end }}>
   {{ $number := print (.Param "weight")}}
-  <img class="comision-img" {{ with $number }} src="/img/com{{.}}.jpeg" {{ end }} alt="">
+  <img class="comision-img" {{ with $number }} src="/img/{{.}}.png" {{ end }} alt="">
   <div class="comision-title">
     {{ upper (.Param "short-title") }}
   </div>
   <div class="comision-status"> 
     {{ if isset .Params "status"}}
       <div>
-      {{ range last 1 .Params.status }}
-        <div>{{.message}}</div>
-      {{end}}
         <div class="comision-article-count">
           {{ $data := newScratch}}
           {{ $data.Set "articulos" 0}}

@@ -1,6 +1,8 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
   {{ .Text | safeHTML }}
   <a class="anchor" href="#{{ .Anchor | safeURL }}">
-    <img src="/icons/link.svg" alt="permalink">
+    <span class="material-symbols-rounded">
+    link
+    </span>
   </a>
 </h{{ .Level }}>

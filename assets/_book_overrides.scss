@@ -74,6 +74,10 @@ body {
 
 .book-menu-content {
     display: flex;
+    
+    nav {
+        padding-right: 2rem;
+    }
 }
 
 .book-content nav:last-child {
