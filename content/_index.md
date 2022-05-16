@@ -4,11 +4,10 @@ title: "Borrador Constitucional | La hoja ya no está en blanco &#128214"
 
 ## Revisa todos los artículos *aprobados* en la convención
 
-{{< hint info >}} 
-&#9432 Aún no se votan *todos* los informes de las comisiones!
-
-*Última actualización:* 28 de abril de 2022
+{{< hint warning >}} 
+**&#127881 El borrador constitucional está listo!**
 {{< /hint >}}
+*Última actualización:* 14 de mayo de 2022
 
 {{< details "**¿Cómo usar esta página?**">}}
 - El trabajo de la Convención se separa en 7 comisiones

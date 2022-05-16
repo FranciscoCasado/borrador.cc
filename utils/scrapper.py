@@ -1,14 +1,24 @@
 import argparse
+
+from pathlib import Path, PurePath
+import os
 import re
 import PyPDF2
 
-import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("file")
-parser.add_argument("output_folder", default=".", )
+parser.add_argument("--output_folder", nargs="?")
 args = parser.parse_args()
 
-folder = args.output_folder + "/"
+file_path = Path(args.file).name.strip(".pdf")
+
+folder = PurePath(Path(args.file).parent.parent, "processed", file_path)
+
+if args.output_folder:
+    folder = args.output_folder
+
+if not Path(folder).exists():
+    os.makedirs(folder)
 
 print(f"Parsing file: {args.file} to folder: {folder}")
 pdf_file=open(args.file,'rb')
@@ -27,17 +37,20 @@ clean_text = re.sub("Sin otro particular, .*", "", head_clean, flags=re.DOTALL)
 for article in clean_text.split("Artículo "):
     article = article.strip()
     weight = re.match("(\d*)", article).expand(r"\1")
+    print(weight)
     
     article = re.sub("^\d*", "", article).strip(".- \n")
     article = article.strip(".- \n")
-    article = re.sub("\d+\Z", "", article).strip(" \n")
-    print (article)
+    article = re.sub(" \n", " ", article)
+    article = re.sub("\d", "", article).strip(" \n")
+    # print (article)
     title = article.split(".")[0]
-    print(title)
+    # print(title)
+
     if not weight:
         continue
     
-    with open (folder+weight+".md","w") as file:
+    with open (PurePath(folder, weight.zfill(2) + ".md"),"w") as file:
         file.write("---\n")
         file.write(f"title: \"Art. {weight}\"\n")
         file.write(f"long-title: \"{title}\"\n")
