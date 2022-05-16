@@ -14,8 +14,12 @@ status:
     -   message: "3ª votación: 18 de abril" 
         document: "Oficio 710 - Sesión nº 84 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-710-normas-aprobadas-segundo-nuevo-informe-de-la-Com.-sobre-Medio-Ambiente-fea.pdf"
-    -   message: "Última votación: 7 de mayo" 
+    -   message: "4ª votación: 7 de mayo" 
         document: "Oficio 756 - Sesión nº 98 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-756-con-normas-aprobadas-en-particular-Sesion-98-del-Pleno-5-2-IR.pdf"
+    
+    -   message: "Última votación: 14 de mayo" 
+        document: "Oficio 777 - Sesión nº 103 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-777-con-normas-aprobadas-en-particular-Sesion-103-del-Pleno-5-3-2da-prop-IR.pdf"
 ---
 {{< status >}}
