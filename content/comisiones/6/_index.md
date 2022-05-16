@@ -24,9 +24,13 @@ status:
         document: "Oficio 736 - Sesión nº 90 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/04/Oficio-N%C2%B0736-que-informa-normas-aprobadas-en-la-sesion-90a-2da-propuesta-del-ll-informe-Com.-Sistemas-de-Conocimientos.pdf"
     
-    -   message: "Última votación:  4 de mayo" 
+    -   message: "6ª votación:  4 de mayo" 
         document: "Oficio 749 - Sesión nº 94 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-749-con-normas-aprobadas-en-particular-Sesion-94-del-Pleno-6-3-IR.pdf"
+    
+    -   message: "Última votación: 13 de mayo" 
+        document: "Oficio 775 - Sesión nº 102 del pleno"
+        link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-775-con-normas-aprobadas-en-la-Sesion-102-con-normas-aprobadas-Com.-sobre-Sistemas-de-Justicia.pdf"
 type: "comision"
 ---
 {{< status >}}
