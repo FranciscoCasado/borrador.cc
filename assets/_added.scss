@@ -1,9 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;350;400&display=swap');
     
 
-h1, h2, h3 {
-    scroll-margin-top: 4rem;
+h1, h2, h3, article {
+    scroll-margin-top: 60px;
 }
+
+body {
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin: 0;
+    
+    width: 100vw;
+    min-height: 100vh;
+    
+    background-color: var(--body-background);
+}
+
+.cc-header-container {
+    margin: auto;
+    
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    
+    display: flex;
+    justify-content: center;
+    
+    border-bottom: solid 1px #ccc;
+    background-color: var(--header-background);
+    z-index: 1;
+}
+
+.cc-header {
+    margin: auto;
+    width: 940px;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+}
+
+.cc-header__item {
+    padding: 0.5rem 2rem;
+    color: var(--gray-800);
+    text-align: center;
+}
+
+.cc-header__item:hover {
+    text-decoration: underline #ccc;
+}
+
+.cc-header__item:first-child {
+    margin-right: auto;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.cc-header__item:last-child {
+    padding-right: 0;
+}
+
+
+.cc-footer {
+    margin: 0;
+    border-top: solid 1px #ccc;
+}
+
+.cc-page {
+    max-width: 940px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.cc-info {
+    position: sticky;
+    top: 100px;
+}
+
+
 
 .comisiones {
     margin-top: 1rem;
@@ -161,7 +238,6 @@ a.anchor img{
     font-size: 1.3em;
     padding-left: 0.5rem;
     border-left: solid var(--gray-700) 2px;
-    background-color: var(--body-background);
     width: 100%;
 }
 

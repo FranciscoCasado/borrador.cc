@@ -1,22 +1,11 @@
-<div class="flex align-center justify-between">
-    <label for="menu-control">
-      <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
-    </label>
-    
-    <div class="page-title">
-      <strong>
-        {{ partial "docs/title" . | emojify}}
-      </strong>
-      {{ if (isset .Params "long-title") }}
-        <p>{{ index .Params "long-title" }}</p>
-      {{ end }} 
-    </div>
-    
-    <label for="toc-control" id="toc-label">
-      {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-      <span>índice</span>
-      <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
-      {{ end }}
-    </label>
+<div class="cc-header">
+  <a href="/" class="cc-header__item">INICIO</a>
+  <a href="/" class="cc-header__item">COMISIONES</a>
+  <a href="/" class="cc-header__item">BORRADOR COMPLETO</a>
+  <a href="/" class="cc-header__item">COMPARA</a>
+  <div class="cc-search">
+    <input type="text" id="cc-search-input" placeholder="Buscar artículos" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />
+    <div class="cc-search-spinner hidden"></div>
+    <ul id="cc-search-results"></ul>
+  </div>
 </div>
-  

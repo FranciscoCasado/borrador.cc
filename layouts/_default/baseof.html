@@ -8,43 +8,37 @@
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
 
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        {{ template "menu" . }} <!-- Left menu Content -->  
-      </div>
-    </aside>
-    
-    <div class="book-page">
-      <header class="book-header">
-        {{ template "header" . }} <!-- Mobile layout header -->
-      </header>
-      <div class="book-content">
-        <div>
+  <nav class="cc-header-container">
+    {{ template "header" . }} <!-- Mobile layout header -->
+  </nav>
+  <main class="container">  
+    <div class="cc-page">
+      <div class="cc-content">
           {{ partial "docs/inject/content-before" . }}
           {{ template "main" . }} <!-- Page Content -->
           {{ partial "docs/inject/content-after" . }}
-
-          <footer class="book-footer">
-              {{ template "footer" . }} <!-- Footer under page content -->
-              {{ partial "docs/inject/footer" . }}
-          </footer>
-          {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-        </div>
-        <aside class="book-toc">
-          <div class="book-toc-content">
-            Índice
-            {{ template "toc" . }} <!-- Table of Contents -->
-          </div>
-        </aside>
       </div>
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-      
+      {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+      <aside class="cc-info">
+        <div class="cc-info-title">
+          
+        </div>
+        <div class="cc-info-toc">
+          Índice
+          {{ partial "toc" . }} <!-- Table of Contents -->
+        </div>
+      </aside>
+      {{ end }}
     </div>
-    {{ end }}
+    <footer class="cc-footer">
+        {{ template "footer" . }} <!-- Footer under page content -->
+        {{ partial "docs/inject/footer" . }}
+    </footer>
+      
+    <!-- <label for="menu-control" class="hidden book-menu-overlay"></label> -->
+  
   </main>
-
+  
   {{ partial "docs/inject/body" . }}
 </body>
 </html>
@@ -82,5 +76,5 @@
 {{ end }}
 
 {{ define "toc" }}
-  {{ partial "docs/toc" . }}
+  {{- partial "toc" . -}}
 {{ end }}
