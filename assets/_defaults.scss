@@ -31,8 +31,8 @@ $hint-colors: (
 
 // Themes
 @mixin theme-light {
-  --gray-100: #f8f9fa;
-  --gray-200: #e9ecef;
+  --gray-100: #dfdfdf;
+  --gray-200: #ccc;
   --gray-300: #c0c2c5;
   --gray-500: #adb5bd;
   --gray-700: #62676b;
@@ -64,7 +64,7 @@ $hint-colors: (
   --color-visited-link: #b88dff;
 
   --body-background: #2d3236;
-  --header-background: #292e33;
+  --header-background: #33393e;
   --informe-background: rgb(35, 39, 43);
   --body-font-color: #e9ecef;
 

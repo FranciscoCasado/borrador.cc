@@ -11,7 +11,8 @@
   <nav class="cc-header-container">
     {{ template "header" . }} <!-- Mobile layout header -->
   </nav>
-  <main class="container">  
+  <main class="container">
+    {{ partial "docs/brand" . }}
     <div class="cc-page">
       <div class="cc-content">
           {{ partial "docs/inject/content-before" . }}

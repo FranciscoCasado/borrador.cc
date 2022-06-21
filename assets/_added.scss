@@ -1,36 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;350;400&display=swap');
-    
 
-h1, h2, h3, article {
+
+h1,
+h2,
+h3,
+article {
     scroll-margin-top: 60px;
 }
 
-body {
-}
+body {}
 
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-top: 50px;
     margin: 0;
-    
+
     width: 100vw;
     min-height: 100vh;
-    
+
     background-color: var(--body-background);
 }
 
+.cc-brand {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    
+    a {
+        display: flex;
+    }
+}
+
+.cc-brand-title {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 220px;
+    color: #333;
+}
+
+.cc-logo {
+    width: 100px;
+}
+
+
 .cc-header-container {
     margin: auto;
-    
+
     position: fixed;
     width: 100%;
     height: $header-height;
-    
+
     display: flex;
     justify-content: center;
-    
-    border-bottom: solid 1px #ccc;
+
+    border-bottom: solid 1px var(--gray-200);
     background-color: var(--header-background);
     z-index: 1;
 }
@@ -56,7 +84,6 @@ body {
 .cc-header__item:first-child {
     margin-right: auto;
     font-weight: bold;
-    padding-left: 0;
 }
 
 .cc-header__item:last-child {
@@ -70,15 +97,33 @@ body {
 }
 
 .cc-page {
-    max-width: 940px;
-    margin: auto;
-    flex-grow: 1;
+    width: 940px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc-content {
+    padding: 20px;
 }
 
 .cc-info {
     position: sticky;
-    top: 100px;
+    top: 4rem;
+    margin-top: 1rem;
+    margin-left: 20px;
+    width: 280px;
+    height: fit-content;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: var(--header-background);
+    border-radius: 10px;
+    border: solid 1px var(--gray-100);
 }
+
+
 
 
 
@@ -88,13 +133,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 300px));
     gap: 0.6rem;
-    
+
     a,
     a:visited,
     a:hover {
         color: inherit;
     }
-    
+
     a:hover {
         text-decoration: none;
     }
@@ -103,13 +148,13 @@ body {
 .comision {
     display: flex;
     flex-direction: column;
-    
+
     border: 1px solid var(--gray-200);
     border-radius: 1rem;
     box-shadow: 1px 2px 2px var(--gray-200);
     transition: border ease 50ms, background-color ease 50ms;
     text-align: center;
-    
+
 }
 
 .comision:hover {
@@ -159,11 +204,12 @@ body {
     background-color: var(--gray-100);
     border: 1px solid var(--gray-100);
     pointer-events: none;
-    
-    .comision-title, .comision-status {
+
+    .comision-title,
+    .comision-status {
         color: var(--gray-700);
     }
-    
+
     box-shadow: none;
 }
 
@@ -179,13 +225,15 @@ body {
 
 .menu-sitio-oficial-convencion {
     color: var(--gray-700);
+
     a {
         color: var(--body-font-color);
         text-decoration: underline;
     }
 }
 
-.menu-item, .menu-item-link {
+.menu-item,
+.menu-item-link {
     font-size: large;
     border: black;
     border-radius: 5px;
@@ -196,7 +244,7 @@ body {
     opacity: 0.5;
 }
 
-a.anchor img{
+a.anchor img {
     opacity: 0.7;
     height: 15px;
     width: 15px;
@@ -204,15 +252,15 @@ a.anchor img{
 
 .articulo {
     margin-bottom: $padding-16 * 1.5;
-    
+
     p {
         margin: 0;
         margin-bottom: 0.8em;
         text-align: justify;
-        
+
         padding-left: 0.5rem;
         border-left: solid var(--gray-200) 2px;
-        
+
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         -ms-hyphens: auto;
@@ -220,11 +268,11 @@ a.anchor img{
         /*Y seguidamente word-wrap como graceful degradation para los navegadores que no lo soporten*/
         word-wrap: break-word;
     }
-    
+
     ol {
         border-left: solid var(--gray-200) 2px;
     }
-    
+
     li p {
         border: none;
     }
@@ -241,10 +289,10 @@ a.anchor img{
     width: 100%;
 }
 
-.article-number{
+.article-number {
     padding-right: 0.5rem;
     height: min-content;
-    width: 8ch;
+    width: 60px;
     position: sticky;
     top: 3.5rem;
     text-align: center;
@@ -252,22 +300,20 @@ a.anchor img{
 
 .article-content {
     min-width: 90%;
-    max-width: 70ch;
+    max-width: 500px;
     padding-right: 0.5rem;
 }
 
 .informe {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-    //box-shadow: 2px 4px 10px var(--gray-300);
     font-family: 'Roboto Slab', 'Roboto', 'Open Sans', 'sans';
     font-weight: 350;
     max-width: 80ch;
 }
 
-.informe-content {
-}
-    
+.informe-content {}
+
 .informe-title {
     display: block;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -293,19 +339,19 @@ a.anchor img{
 }
 
 
-.toc-section{
+.toc-section {
     display: flex;
     flex-direction: column;
-    
+
     ul {
         list-style-type: none;
         padding: 0;
-        
+
         li a {
             display: flex;
             flex-direction: row;
         }
-        
+
     }
 }
 
@@ -314,15 +360,16 @@ a.anchor img{
     margin-top: 1rem;
 }
 
-.toc-item  {
+.toc-item {
     display: inline-block;
     margin: 0;
 }
+
 .toc-marker {
     min-width: 3rem;
     padding-right: 0.5rem;
     text-align: right;
-    
+
 }
 
 
@@ -332,49 +379,53 @@ a.anchor img{
         height: 15px;
         width: 15px;
     }
-    
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
         scroll-margin-top: 25rem;
     }
-    
+
     .comisiones {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
     }
-    
+
     .comision {
         width: 100%;
         align-items: center;
     }
-    
-    .comision-title{
+
+    .comision-title {
         bottom: 1rem;
         line-height: 1em;
         font-size: $font-size-16;
     }
-    
-    .comision-article-count{
+
+    .comision-article-count {
         bottom: 0rem;
         font-size: small;
     }
-    
+
     .articulo h3,
     .article-number {
         top: 4rem;
     }
-    
-    .toc-content{
+
+    .toc-content {
         max-height: 35vh;
         overflow-y: scroll !important;
     }
-    
+
     #toc-label {
         display: flex;
         align-items: center;
     }
-    
-};
+
+}
+
+;
 
 
 
@@ -403,8 +454,8 @@ a.anchor img{
     text-align: center;
     border: solid 1px var(--gray-200);
     border-radius: 5px;
-        
-    p  {
+
+    p {
         margin: 0;
         font-size: small;
         padding: 0.5em;
@@ -415,7 +466,7 @@ li.date::marker {
     content: "";
 }
 
-    
+
 .date-day {
     display: block;
     font-size: 2rem;
@@ -424,7 +475,7 @@ li.date::marker {
     color: var(--gray-700);
 }
 
-.date-month{
+.date-month {
     display: block;
     font-style: italic;
     font-weight: 600;
@@ -437,7 +488,7 @@ li.date::marker {
 }
 
 .date:last-child {
-    
+
     .date-month {
         background-color: rgba(221, 48, 42, 0.723);
     }
@@ -447,24 +498,26 @@ li.date::marker {
 .disclaimer {
     display: flex;
     padding: 1em;
-    
+
     border-radius: 6px;
     background-color: var(--gray-100);
     background: linear-gradient(30deg, var(--gray-100), var(--body-background) 100%);
-    
+
     img {
         position: relative;
         top: 3px;
         width: 10px;
         height: 15px;
-    };
-    
+    }
+
+    ;
+
     p {
         margin: 0;
         line-height: 1.4em;
         color: var(--gray-800);
         padding-left: 0.5em;
-        
+
         em {
             font-style: normal;
             font-weight: lighter;
@@ -479,34 +532,35 @@ li.date::marker {
     border: solid 1px var(--gray-300);
     border-radius: 6px;
     padding: 0.5em 1em;
-    
+
     img {
         display: block;
-        position:relative;
+        position: relative;
         top: 5px;
         width: 20px;
         height: 20px;
         padding-right: 0.5em;
-        
+
     }
-    
+
     p {
         display: block;
         margin: 0;
         padding-left: 0.5em;
-        border-left: solid 1px var(--gray-300);;
+        border-left: solid 1px var(--gray-300);
+        ;
     }
-    
+
     p.url {
         text-decoration: underline;
     }
-    
+
 }
 
 .external-link:hover {
-    
+
     background-color: var(--gray-100);
-    
+
     p.url {
         text-decoration: underline;
         color: var(--gray-800);
@@ -517,13 +571,13 @@ section.full-text {
     margin: auto;
     margin-top: 2rem;
     max-width: 50%;
-    
-    a.comision {    
+
+    a.comision {
         display: flex;
         justify-content: center;
         align-items: center;
         width: fit-content;
-        
+
     }
 
 }

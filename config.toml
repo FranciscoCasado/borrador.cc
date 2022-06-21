@@ -1,7 +1,7 @@
 googleAnalytics = "G-0DJ0DJQZPW"
 baseURL = "https://leelanuevaconstitucion.cl/"
 languageCode = "es-cl"
-title = "Lee la futura constitución"
+title = "Lee la nueva constitución"
 paginate = 50
 
 [params]
@@ -10,3 +10,4 @@ paginate = 50
     enableEmoji = true
     BookToc = false
     BookTheme = 'auto'
+    Logo = "img/logo.png"
