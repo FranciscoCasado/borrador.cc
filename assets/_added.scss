@@ -352,19 +352,20 @@ a.anchor img {
 .informe-title {
     position: sticky;
     top: $header-height + 0.5rem;
+    margin: 0;
+    
+    width: 100px;
     
     color: var(--gray-800);
     font-size: 0.8rem;
     word-wrap: break-word;
     
-    // border-right: solid 5px var(--gray-300);
-    
-    transform-origin: center;
-    transform: translateX(-126px);
+    transform: translateX(-146px);
     
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
     text-align: right;
     
     .thumbnail {
@@ -373,8 +374,11 @@ a.anchor img {
         display: block;
     }
     
-    width: 100px;
     
+}
+
+.informe-content {
+    display: block;
 }
 
 .informe-content h1,

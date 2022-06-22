@@ -8,13 +8,13 @@
         {{ if not (isset $comision.Params "bookhidden")}}
           {{ range $informe := .Pages}}
           <section class="informe">
-            <div class="informe-title"> 
+            <span class="informe-title"> 
               {{ with ($comision.Param "weight")}}
               <img class="thumbnail" src="/img/{{.}}.png" alt="">
               {{ end }}
               <div><b>{{ $comision.Param "short-title" }}</b></div>
               <div>{{ $informe.Title }}</div>
-            </div>
+            </span>
             <div class="informe-content">
             {{ range .Pages }}
               {{ template "entry" .}}
