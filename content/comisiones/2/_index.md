@@ -36,7 +36,9 @@ status:
         document: "Oficio 745 - Sesión nº 93 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-745-con-normas-aprobadas-en-particular-Sesion-93-del-Pleno-votacion-2-3-2da-propuesta-fea.pdf"
         
-        
+article-count: 42
+report-count: 3
+toc: true
 type: "comision"
 ---
 {{< status >}}

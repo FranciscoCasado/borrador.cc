@@ -13,18 +13,21 @@
   </nav>
   <main class="container">
     {{ partial "docs/brand" . }}
-    <div class="cc-page">
+    
+    {{ $page_style := cond (eq true (.Param "toc")) "reader-grid" ""}}
+    
+    <div class="cc-body {{ $page_style }}">
       <div class="cc-content">
           {{ partial "docs/inject/content-before" . }}
           {{ template "main" . }} <!-- Page Content -->
           {{ partial "docs/inject/content-after" . }}
       </div>
-      {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-      <aside class="cc-info">
-        <div class="cc-info-title">
-          
+      {{ if eq true (.Param "toc") }}
+      <aside class="cc-aside">
+        <div class="cc-aside-info">
+          {{ partial "info" . }}
         </div>
-        <div class="cc-info-toc">
+        <div class="cc-aside-toc">
           Índice
           {{ partial "toc" . }} <!-- Table of Contents -->
         </div>

@@ -25,7 +25,9 @@ status:
     -   message: "Última votación: 6 de mayo" 
         document: "Oficio 753 - Sesión nº 96 del pleno"    
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-753-con-normas-aprobadas-en-particular-Sesion-96-del-Pleno-votacion-3-3-2da-propuesta.pdf"
-        
+article-count: 96
+report-count: 3
+toc: true
 type: "comision"
 ---
 {{< status >}}

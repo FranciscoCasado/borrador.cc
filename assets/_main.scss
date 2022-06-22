@@ -2,6 +2,7 @@ html {
   font-size: $font-size-base;
   scroll-behavior: smooth;
   touch-action: manipulation;
+  background: var(--header-background);
 }
 
 body {

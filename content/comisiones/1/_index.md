@@ -24,5 +24,8 @@ status:
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-758-con-normas-aprobadas-en-particular-Sesion-99-del-Pleno-votacion-1-2-nueva-2da-propuesta.pdf"
         
 type: comision
+article-count: 100
+report-count: 3
+toc: true
 ---
 {{< status >}}

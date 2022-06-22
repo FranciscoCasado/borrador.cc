@@ -1,11 +1,20 @@
 {{ define "main" }}
+<div class="cc-reader">
+  <h1>{{ .Title }}</h1>
+  {{ .Summary }}
   {{ .Content }}
+  
     {{ range $comision := where .Site.Pages "Type" "comision"}}
         {{ if not (isset $comision.Params "bookhidden")}}
-          {{ template "comision-heading" . }}
           {{ range $informe := .Pages}}
           <section class="informe">
-            <div class="informe-title"> {{ $informe.Title}} </div>
+            <div class="informe-title"> 
+              {{ with ($comision.Param "weight")}}
+              <img class="thumbnail" src="/img/{{.}}.png" alt="">
+              {{ end }}
+              <div><b>{{ $comision.Param "short-title" }}</b></div>
+              <div>{{ $informe.Title }}</div>
+            </div>
             <div class="informe-content">
             {{ range .Pages }}
               {{ template "entry" .}}
@@ -15,6 +24,7 @@
           {{ end }}
         {{ end }}
     {{ end }}
+</div>
 {{ end }}
 
 {{ define "comision-heading" }}
