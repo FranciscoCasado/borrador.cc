@@ -12,8 +12,10 @@
               {{ with ($comision.Param "weight")}}
               <img class="thumbnail" src="/img/{{.}}.png" alt="">
               {{ end }}
+              <div>
               <div><b>{{ $comision.Param "short-title" }}</b></div>
               <div>{{ $informe.Title }}</div>
+            </div>
             </span>
             <div class="informe-content">
             {{ range .Pages }}

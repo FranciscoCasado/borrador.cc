@@ -14,8 +14,9 @@
   <main class="container">
     {{ partial "docs/brand" . }}
     
-    {{ $page_style := cond (eq true (.Param "toc")) "reader-grid" ""}}
+    {{ partial "disclaimer" . }}
     
+    {{ $page_style := cond (eq true (.Param "toc")) "reader-grid" ""}}
     <div class="cc-body {{ $page_style }}">
       <div class="cc-content">
           {{ partial "docs/inject/content-before" . }}
