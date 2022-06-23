@@ -3,7 +3,6 @@ title: "Comisión 5"
 long-title: "Medio Ambiente, Derechos de la Naturaleza, Bienes Naturales Comunes y Modelo Económico"
 short-title: "Medio Ambiente"
 weight: 5
-type: "comision"
 status: 
     -   message: "1ª votación: 4 de marzo" 
         document: "Oficio 563 - Sesión nº 65 del pleno"
@@ -21,5 +20,10 @@ status:
     -   message: "Última votación: 14 de mayo" 
         document: "Oficio 777 - Sesión nº 103 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-777-con-normas-aprobadas-en-particular-Sesion-103-del-Pleno-5-3-2da-prop-IR.pdf"
+        
+article-count: 43
+report-count: 2
+toc: true
+type: "comision"
 ---
 {{< status >}}

@@ -1,14 +1,17 @@
-{{ $disabled := isset .Page.Params "bookhidden" }}
-{{ $warning := cond ( $disabled ) "warning" " "}}
-{{ $icon := cond ( $disabled ) "pending" "check"}}
-     <blockquote {{ with $warning }}class="book-hint {{.}}"{{ end }}> 
-        <div class="comision-status 
-        " style="flex-direction: column">
+<div class="cc-comision-status">
+    <div class="cc-comision-info">
+        <span>{{ .Page.Param "article-count"}} artículos</span>
+        <span>{{ .Page.Param "report-count"}} informes</span>
+    </div>
+    <details class="cc-comision-docs">
+        <summary>Documentos de las votaciones</summary>
+        <ul class="cc-doc-list">
             {{ range .Page.Param "status" }}
-            <div>
-            <img {{ with $icon }}src="/icons/{{.}}.svg"{{end}} width="15" height="15" alt="">
-                {{ .message }} <a {{with .link }} href="{{.}}"{{ end }}>{{ with .document }} &#128196 {{ . }} {{end }}</a>
-            </div>
+            <li>
+                <span>{{ .message }}</span>
+                <a {{with .link }} href="{{.}}" {{ end }}>{{ with .document }} &#128196 {{ . }} {{end}}</a>
+            </li>
             {{ end }}
-        </div>
-    </blockquote>
+        </ul>
+    </details>
+</div>

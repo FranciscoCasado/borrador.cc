@@ -27,7 +27,7 @@ body {}
     margin: 1rem auto;
     background-color: white;
     border-radius: 10px;
-    
+
     a {
         padding: 1rem;
         display: flex;
@@ -94,8 +94,7 @@ body {}
 .cc-content {
     max-width: 940px;
     justify-content: center;
-    text-align: center;
-} 
+}
 
 
 .cc-footer {
@@ -126,7 +125,13 @@ body {}
     background-color: var(--header-background);
     border-radius: 10px;
     border: solid 1px var(--gray-100);
+    justify-content: center;
 }
+
+.cc-reader-title {
+    text-align: center;
+}
+
 
 .cc-aside {
     position: sticky;
@@ -141,37 +146,27 @@ body {}
     padding: 10px;
     text-transform: uppercase;
     font-weight: 600;
-    
+
     background-color: var(--header-background);
     border-radius: 10px;
     border: solid 1px var(--gray-100);
     justify-content: center;
     text-align: center;
-    
-    span {
-        display: inline-block;
-        padding: 0 0.5rem;
-        border-radius: 1rem;
-        background-color: var(--gray-100);
-        
-        font-style: italic;
-        font-weight: lighter;
-        font-size: small;
-    }
+
+
 }
 
 .cc-aside-toc {
     padding: 10px;
-    margin-top: 1rem;
     font-size: 0.9em;
-    
+
     max-height: 80vh;
     overflow-y: scroll;
-    
+
     background-color: var(--header-background);
     border-radius: 10px;
     border: solid 1px var(--gray-100);
-    
+
 }
 
 
@@ -183,7 +178,7 @@ body {}
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(120px, 300px));
-    
+
     a,
     a:visited,
     a:hover {
@@ -214,7 +209,7 @@ body {}
 .comision-img {
     margin: 10px;
     width: 80%;
-    border-radius: 30px ;
+    border-radius: 30px;
 }
 
 .comision-title {
@@ -225,22 +220,36 @@ body {}
     font-weight: 600;
 }
 
-.comision-status {
-    display: flex;
-    font-size: $font-size-14;
-    margin-top: 1em;
-    justify-content: center;
+.cc-comision-status {
+    margin: auto;
+    margin-top: 1rem;
 }
 
-.comision-status-icon {
-    /*not in use*/
-    display: block;
-    width: 30px;
-    background-image: url("icons/check.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-    background-size: 50%;
+.cc-comision-info {
+    text-align: center;
+
+    span {
+        padding: 0 0.5rem;
+        border-radius: 1rem;
+        background-color: var(--gray-100);
+
+        font-style: italic;
+        font-weight: light;
+    }
 }
+
+.cc-comision-docs {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--gray-100);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.cc-doc-list {
+    text-align: left;
+}
+
 
 .comision-article-count {
     display: block;
@@ -366,28 +375,29 @@ a.anchor img {
     position: sticky;
     top: $header-height + 0.5rem;
     margin: 0;
-    
+    margin-bottom: 1rem;
+
     width: 100px;
-    
+
     color: var(--gray-800);
     font-size: 0.8rem;
     word-wrap: break-word;
-    
+
     transform: translateX(-146px);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     text-align: right;
-    
+
     .thumbnail {
         width: 35px;
         border-radius: 5px;
         display: block;
     }
-    
-    
+
+
 }
 
 .informe-content {
@@ -498,58 +508,49 @@ a.anchor img {
     .reader-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cc-aside {
         position: fixed;
         max-width: 90%;
         max-height: 60vh;
-        
+
         display: none;
         flex-direction: column-reverse;
-        
-        .cc-aside-info {
-            margin: 0;
-            margin-top: 0.5rem;
-        }
-        
-        .cc-aside-toc {
-        }
     }
-    
+
     .cc-header {
         margin: 0;
         width: 90%;
         justify-content: space-between
-        
     }
-    
+
     .cc-header__item:not(:first-child):not(:last-child) {
         display: none;
     }
-    
-    
-    
+
+
+
     .informe-title {
         flex-direction: row;
-        white-space: nowrap ;
+        white-space: nowrap;
         width: fit-content;
         padding: 0.2rem 0.5rem;
         background-color: var(--header-background);
-        
+
         margin-left: auto;
         border-radius: 10px;
         border: solid 1px var(--gray-200);
         transform: translateX(10px);
-        
-        
+
+
     }
-    
+
     .cc-reader {
         border: none;
         background-color: var(--body-background)
     }
-    
-    
+
+
 }
 
 ;
@@ -627,12 +628,12 @@ li.date::marker {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    
+
     background-color: var(--gray-100);
     border-radius: 6px;
     margin: auto;
     width: fit-content;
-    
+
     img {
         width: 10px;
         height: 15px;
@@ -706,4 +707,35 @@ section.full-text {
 
     }
 
+}
+
+
+.divider {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid 3px var(--gray-300);
+    border-radius: 5px;
+    margin: 2rem auto;
+}
+
+
+.divider::before,
+.divider::after {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 2px;
+    background-color: var(--gray-300);
+}
+
+.divider::before {
+    right: 110px;
+    transform: translateY(-.5px);
+}
+
+.divider::after {
+    left: 10px;
+    transform: translateY(-2.5px);
 }

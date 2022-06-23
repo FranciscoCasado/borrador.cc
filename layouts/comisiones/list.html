@@ -1,34 +1,49 @@
 {{ define "main" }}
-  <section class="markdown">
-  {{ .Page.Content }}
+<div class="cc-reader">
+  <div class="cc-reader-title">
+    <h1>{{ .Param "short-title" }}</h1>
+    {{ .Param "long-title" }}
+  </div>
+  {{ .Content }}
+
+  <div class="divider"></div>
   
   {{ if eq .Type "comision"}}
-    {{ range .Pages }}
-    <section class="informe">
-      <div class="informe-title"> {{ .Title}} </div>
-      <div class="informe-content">
-        {{ template "articles" . }}
+  {{ $comision := . }}
+  {{ range .Pages }}
+  <section class="informe">
+    <span class="informe-title">
+      {{ with ($comision.Param "weight")}}
+      <img class="thumbnail" src="/img/{{.}}.png" alt="">
+      {{ end }}
+      <div>
+        <div><b>{{ $comision.Param "short-title" }}</b></div>
+        <div>{{ .Title }}</div>
       </div>
-      </section>
-    {{ end }}
+    </span>
+    <div class="informe-content">
+      {{ template "articles" . }}
+    </div>
+  </section>
   {{ end }}
-  
+  {{ end }}
+
   {{ if eq .Type "informe"}}
   <section class="informe">
     <div class="informe-title"> {{ .Title}} </div>
     <div class="informe-content">
-    {{ template "articles" . }}
+      {{ template "articles" . }}
     </div>
   </section>
   {{ end }}
-  </section>
+</div>
 {{ end }}
 
 
 {{ define "articles"}}
-  {{ range .Pages }}
-  {{ if or (eq .Type "articulo") (eq .Type "heading" )}}
-    {{ partial (.Param "type") . }}
-  {{ end }}
-  {{ end }}
+{{ range .Pages }}
+{{ if or (eq .Type "articulo") (eq .Type "heading" )}}
+{{ partial (.Param "type") . }}
+{{ end }}
+{{ end }}
 {{ end }}

@@ -31,6 +31,9 @@ status:
     -   message: "Última votación: 13 de mayo" 
         document: "Oficio 775 - Sesión nº 102 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-775-con-normas-aprobadas-en-la-Sesion-102-con-normas-aprobadas-Com.-sobre-Sistemas-de-Justicia.pdf"
+article-count: 118
+report-count: 3
+toc: true
 type: "comision"
 ---
 {{< status >}}

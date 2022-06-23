@@ -25,7 +25,7 @@ status:
         
 type: comision
 article-count: 100
-report-count: 3
+report-count: 2
 toc: true
 ---
 {{< status >}}

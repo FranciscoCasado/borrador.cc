@@ -22,7 +22,9 @@ status:
     -   message: "Última votación: 5 de mayo" 
         document: "Oficio 754 - Sesión nº 96 del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-754-con-normas-aprobadas-en-particular-Sesion-96-del-Pleno-7-3-2da-propuesta.pdf"
-        
+article-count: 41
+report-count: 3
+toc: true
 type: "comision"
 ---
 {{< status >}}

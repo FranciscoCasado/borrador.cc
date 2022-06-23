@@ -1,8 +1,12 @@
 {{ define "main" }}
 <div class="cc-reader">
+  
+  <div class="cc-reader-title">
   <h1>{{ .Title }}</h1>
   {{ .Summary }}
+  </div>
   {{ .Content }}
+  <div class="divider"></div>
   
     {{ range $comision := where .Site.Pages "Type" "comision"}}
         {{ if not (isset $comision.Params "bookhidden")}}

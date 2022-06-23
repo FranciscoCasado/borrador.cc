@@ -20,5 +20,8 @@ status:
         document: "Oficio 766 - Sesión nº 💯  del pleno"
         link: "https://www.chileconvencion.cl/wp-content/uploads/2022/05/Oficio-766-mediante-el-cual-se-informan-las-normas-aprobadas-4-2-2da-propuesta.pdf"
 type: "comision"
+article-count: 58
+report-count: 2
+toc: true
 ---
 {{< status >}}

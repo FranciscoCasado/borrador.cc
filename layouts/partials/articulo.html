@@ -1,10 +1,7 @@
 {{ $id := print "com" (.Parent.Parent.Param "weight") "-in" (.Parent.Param "number") "-art" (.Param "weight")}}
 <article  id={{ $id }} class="articulo flex">
   {{ $long_title := index .Page.Params "long-title" }}
-  <div class=" article-number"> {{ .Title }} 
-    <!-- <a class="anchor" {{ with $id }} href="#{{.}}" {{end}}>
-      <img src="/icons/link.svg" alt="permalink">
-    </a> -->
+  <div class=" article-number"> {{ .Title }}
   </div>
   {{ partial "docs/post-meta" . }}
   <div class="article-content">
