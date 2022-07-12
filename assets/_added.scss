@@ -65,7 +65,7 @@ body {}
 
 .cc-header {
     margin: auto;
-    max-width: 940px;
+    width: 940px;
     height: $header-height;
     display: flex;
     align-items: center;
@@ -94,6 +94,8 @@ body {}
 .cc-content {
     max-width: 940px;
     justify-content: center;
+    
+    text-align: center;
 }
 
 
@@ -177,7 +179,8 @@ body {}
     margin-top: 1rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(120px, 300px));
+    grid-template-columns: repeat(3, minmax(120px, 200px));
+    justify-content: center;
 
     a,
     a:visited,
@@ -372,24 +375,32 @@ a.anchor img {
 
 
 .informe-title {
+    display: flex;
+    
     position: sticky;
-    top: $header-height + 0.5rem;
+    top: $header-height - 0.5rem;
     margin: 0;
     margin-bottom: 1rem;
-
-    width: 100px;
 
     color: var(--gray-800);
     font-size: 0.8rem;
     word-wrap: break-word;
 
-    transform: translateX(-146px);
-
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     text-align: right;
+    
+    
+    flex-direction: row;
+    white-space: nowrap;
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--header-background);
+    box-shadow: 2px 2px 8px var(--gray-300);
+
+    margin-left: auto;
+    border-radius: 10px;
+    border: solid 1px var(--gray-200);
 
     .thumbnail {
         width: 35px;

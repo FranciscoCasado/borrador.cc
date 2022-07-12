@@ -25,6 +25,9 @@
       </div>
       {{ if eq true (.Param "toc") }}
       <aside class="cc-aside">
+        <div class="cc-aside-info">
+          {{ partial "info" . }}
+        </div>
         <div class="cc-aside-toc">
           Índice
           {{ partial "toc" . }} <!-- Table of Contents -->
