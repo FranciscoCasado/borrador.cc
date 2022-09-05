@@ -43,4 +43,3 @@ La Convención Constitucional ha formado 7 comisiones de trabajo y cada convenci
 7. Sistemas de Conocimiento
 
 Cada comisiones propone al pleno de la convención los artículos para ser votador, mediante una serie de *informes*. Las y los convencionales pueden proponer *idicaciones* (cambios) a cada artículo y/o sus *incisos* (párrafos).
-
